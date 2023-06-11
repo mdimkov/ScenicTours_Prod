@@ -1,0 +1,37 @@
+<centertab scriptid="custcentertab_oro_procurement_purchase">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>T</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <label>Purchasing</label>
+  <portlets>
+    <portlet scriptid="portlet_843_5504989_146">
+      <isportletshown>T</isportletshown>
+      <portlet>TASKLINKS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_844_5504989_593">
+      <isportletshown>T</isportletshown>
+      <portlet>QUICKSEARCH</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_845_5504989_194">
+      <isportletshown>T</isportletshown>
+      <portlet>RECENTREPORTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_846_5504989_196">
+      <isportletshown>T</isportletshown>
+      <portlet>RECENTRECORDS</portlet>
+      <portletcolumn>3</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_847_5504989_562">
+      <isportletshown>T</isportletshown>
+      <portlet>SHORTCUTS</portlet>
+      <portletcolumn>3</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

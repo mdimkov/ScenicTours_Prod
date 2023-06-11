@@ -1,0 +1,67 @@
+<centertab scriptid="custcentertab_oro_warehousing_act">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>T</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>[scriptid=custcenter_oro_warehousing]</center>
+  <label>Tasks &amp; Activities</label>
+  <portlets>
+    <portlet scriptid="portlet_868_5504989_173">
+      <isportletshown>T</isportletshown>
+      <portlet>TASKLINKS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_869_5504989_293">
+      <isportletshown>T</isportletshown>
+      <portlet>QUICKSEARCH</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1428_5504989_774">
+      <isportletshown>T</isportletshown>
+      <portlet>TIMELINE</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1429_5504989_328">
+      <isportletshown>F</isportletshown>
+      <portlet>ANALYTICS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1430_5504989_260">
+      <isportletshown>F</isportletshown>
+      <portlet>ANALYTICS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1431_5504989_189">
+      <isportletshown>F</isportletshown>
+      <portlet>ANALYTICS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_870_5504989_216">
+      <isportletshown>T</isportletshown>
+      <portlet>RECENTREPORTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1427_5504989_330">
+      <isportletshown>T</isportletshown>
+      <portlet>CALENDAR</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1432_5504989_821">
+      <isportletshown>T</isportletshown>
+      <portlet>SCHEDULER</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_871_5504989_280">
+      <isportletshown>T</isportletshown>
+      <portlet>RECENTRECORDS</portlet>
+      <portletcolumn>3</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_872_5504989_102">
+      <isportletshown>T</isportletshown>
+      <portlet>SHORTCUTS</portlet>
+      <portletcolumn>3</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

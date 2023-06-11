@@ -1,0 +1,32 @@
+<centercategory scriptid="custcentercategory_oro_procurement_purchase_order">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_purchase]</centertab>
+  <label>Order Items</label>
+  <links>
+    <link>
+      <linkid>TRAN_ORDERITEMS</linkid>
+      <linklabel></linklabel>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_TRAN_PURCHORD</linkid>
+      <linklabel>Liste an Lieferantenbestellungen</linklabel>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_277</linkid>
+      <linklabel></linklabel>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_278</linkid>
+      <linklabel></linklabel>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_NEG222</linkid>
+      <linklabel></linklabel>
+      <shortlist>T</shortlist>
+    </link>
+  </links>
+</centercategory>

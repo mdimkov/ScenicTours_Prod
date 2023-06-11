@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_support_cases_refund_return">
+  <center>[scriptid=custcenter_oro_support]</center>
+  <centertab>[scriptid=custcentertab_oro_support_cases_refund]</centertab>
+  <label>Refund Return</label>
+  <links>
+    <link>
+      <linkid>EDIT_TRAN_CUSTRFND</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_RTNAUTHCREDIT</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

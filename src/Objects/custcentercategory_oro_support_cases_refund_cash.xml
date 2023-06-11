@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_support_cases_refund_cash">
+  <center>[scriptid=custcenter_oro_support]</center>
+  <centertab>[scriptid=custcentertab_oro_support_cases_refund]</centertab>
+  <label>Cash Refund</label>
+  <links>
+    <link>
+      <linkid>LIST_TRAN_CASHRFND</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_TRAN_CASHRFND</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

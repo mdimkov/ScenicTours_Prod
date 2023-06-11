@@ -1,0 +1,31 @@
+<centercategory scriptid="custcentercategory_oro_fam_leases">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_fam_fixedassets]</centertab>
+  <label>Leases</label>
+  <links>
+    <link>
+      <linklabel>Lease</linklabel>
+      <linkobject>[scriptid=customtransaction_fam_leaseproposal]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Generate Lease Schedules</linklabel>
+      <linkobject>[scriptid=customscript_fam_generateleasesched_su]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Finalize Migrated Leases</linklabel>
+      <linkobject>[scriptid=customscript_fam_finalizeleaseprop_su]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Lease Modification</linklabel>
+      <linkobject>[scriptid=customscript_fam_leasemodification_su]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

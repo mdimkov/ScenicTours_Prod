@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_oro_3019_sl_ch_box_details">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>oro 3019 SL CH VAT Box Details</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 317462/_oro_3010_ch_localization/scripts/suitelet/_oro_3019_sl_ch_vat_box_details.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_oro_3019_sl_ch_box_details">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>ERROR</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>oro 3019 SL CH VAT Box Details</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

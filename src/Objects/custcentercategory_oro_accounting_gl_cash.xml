@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_accounting_gl_cash">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_gl]</centertab>
+  <label>Bank</label>
+  <links>
+    <link>
+      <linkid>REPO_NEG201</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

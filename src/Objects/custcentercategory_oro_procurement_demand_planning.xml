@@ -1,0 +1,32 @@
+<centercategory scriptid="custcentercategory_oro_procurement_demand_planning">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_demand]</centertab>
+  <label>Demand Planning</label>
+  <links>
+    <link>
+      <linkid>TRAN_APPROVAL_PURCHORD</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_TRAN_PURCHORD</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_277</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_TRAN_PURCHORD_REQ</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_REALLOCITEMS</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

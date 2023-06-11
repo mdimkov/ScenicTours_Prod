@@ -1,0 +1,10 @@
+<centertab scriptid="custcentertab_oro_support_cases_repairs">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>T</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>[scriptid=custcenter_oro_support]</center>
+  <label>Repair &amp; Return</label>
+</centertab>

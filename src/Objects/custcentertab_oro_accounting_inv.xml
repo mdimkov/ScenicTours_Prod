@@ -1,0 +1,37 @@
+<centertab scriptid="custcentertab_oro_accounting_inv">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>T</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <label>Inventory</label>
+  <portlets>
+    <portlet scriptid="portlet_903_5504989_295">
+      <isportletshown>T</isportletshown>
+      <portlet>TASKLINKS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_904_5504989_991">
+      <isportletshown>T</isportletshown>
+      <portlet>QUICKSEARCH</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_905_5504989_112">
+      <isportletshown>T</isportletshown>
+      <portlet>RECENTREPORTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_906_5504989_129">
+      <isportletshown>T</isportletshown>
+      <portlet>RECENTRECORDS</portlet>
+      <portletcolumn>3</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_907_5504989_196">
+      <isportletshown>T</isportletshown>
+      <portlet>SHORTCUTS</portlet>
+      <portletcolumn>3</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

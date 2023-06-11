@@ -1,0 +1,43 @@
+<centercategory scriptid="custcentercategory_oro_fam_transactions">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_fam_fixedassets]</centertab>
+  <label>Transactions</label>
+  <links>
+    <link>
+      <linklabel>Asset Proposal</linklabel>
+      <linkobject>[scriptid=customscript_fam_assetproposal_su]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Asset Depreciation</linklabel>
+      <linkobject>[scriptid=customscript_fam_assetdepreciation_su]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Asset Disposal</linklabel>
+      <linkobject>[scriptid=customscript_fam_disposal_su]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Asset Revaluation</linklabel>
+      <linkobject>[scriptid=customscript_fam_assetrevaluation_su]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Asset Split</linklabel>
+      <linkobject>[scriptid=customscript_fam_su_assetsplit]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Asset Transfer</linklabel>
+      <linkobject>[scriptid=customscript_fam_assettransfer_su]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

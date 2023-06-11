@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_oro_ic_invoice_malta" standard="STDTMPLCUSTINVCST">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>T</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>oro 1230 IC Invoice</title>
+  <trantype>CUSTINVC</trantype>
+</advancedpdftemplate>

@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_accounting_ee_emp">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_ee]</centertab>
+  <label>Employee Management</label>
+  <links>
+    <link>
+      <linkid>LIST_EMPLOYEE_RECORD</linkid>
+      <linklabel>Employees</linklabel>
+      <shortlist>T</shortlist>
+    </link>
+  </links>
+</centercategory>

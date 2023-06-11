@@ -1,0 +1,22 @@
+<centercategory scriptid="custcentercategory_oro_accounting_gl_vat">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_gl]</centertab>
+  <label>VAT</label>
+  <links>
+    <link>
+      <linkid>LIST_TAXPERIOD</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_TAXITEM</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_TAXSCHEDULE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

@@ -1,0 +1,29 @@
+<mapreducescript scriptid="customscript_oro_3690_mr_create_payments">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>_ORO_3690|MR|Create Payments</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteBundles/Bundle 407612/_oro_3690_bank_reconciliation/Scripts/Server/MapReduce/_oro_3690_mr_create_payments.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_oro_3690_mr_create_payments">
+      <buffersize>1</buffersize>
+      <concurrencylimit>1</concurrencylimit>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <queueallstagesatonce>T</queueallstagesatonce>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>NOTSCHEDULED</status>
+      <title>_ORO_3690|MR|Create Payments</title>
+      <yieldaftermins>15</yieldaftermins>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2021-06-03</startdate>
+          <starttime>16:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>

@@ -1,0 +1,22 @@
+<centercategory scriptid="custcentercategory_oro_accounting_gl_budgeting">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_gl]</centertab>
+  <label>Budget Planning</label>
+  <links>
+    <link>
+      <linkid>LIST_PRESCATEGORY</linkid>
+      <linklabel>Budget Categories</linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_NEG196</linkid>
+      <linklabel>Budget</linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_NEG197</linkid>
+      <linklabel>Budget vs. Actual</linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

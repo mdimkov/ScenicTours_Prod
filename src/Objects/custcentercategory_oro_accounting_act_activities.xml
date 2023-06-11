@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_accounting_act_activities">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_act]</centertab>
+  <label>Activities</label>
+  <links>
+    <link>
+      <linkid>LIST_ACTIVITY</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

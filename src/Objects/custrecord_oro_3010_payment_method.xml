@@ -1,0 +1,47 @@
+<othercustomfield scriptid="custrecord_oro_3010_payment_method">
+  <accesslevel>2</accesslevel>
+  <applyformatting>F</applyformatting>
+  <checkspelling>F</checkspelling>
+  <defaultchecked>F</defaultchecked>
+  <defaultselection></defaultselection>
+  <defaultvalue></defaultvalue>
+  <description></description>
+  <displayheight></displayheight>
+  <displaytype>NORMAL</displaytype>
+  <displaywidth></displaywidth>
+  <dynamicdefault></dynamicdefault>
+  <encryptatrest>F</encryptatrest>
+  <fieldtype>SELECT</fieldtype>
+  <help>Please select the relevant payment methods if this bank account is meant to be integrated with Swiss payment methods.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>Swiss Payment Method Integration</label>
+  <linktext></linktext>
+  <maxlength></maxlength>
+  <maxvalue></maxvalue>
+  <minvalue></minvalue>
+  <onparentdelete>NO_ACTION</onparentdelete>
+  <rectype>-112</rectype>
+  <searchcomparefield></searchcomparefield>
+  <searchdefault></searchdefault>
+  <searchlevel>2</searchlevel>
+  <selectrecordtype>[scriptid=customrecord_oro_3010_ch_loc_settings]</selectrecordtype>
+  <showhierarchy>F</showhierarchy>
+  <showinlist>F</showinlist>
+  <sourcefilterby></sourcefilterby>
+  <sourcefrom></sourcefrom>
+  <sourcelist></sourcelist>
+  <storevalue>T</storevalue>
+  <customfieldfilters>
+    <customfieldfilter>
+      <fldcomparefield></fldcomparefield>
+      <fldfilter>[scriptid=customrecord_oro_3010_ch_loc_settings.custrecord_oro_3010_ch_loc_settings_type]</fldfilter>
+      <fldfilterchecked></fldfilterchecked>
+      <fldfiltercomparetype>EQ</fldfiltercomparetype>
+      <fldfilternotnull>F</fldfilternotnull>
+      <fldfilternull>F</fldfilternull>
+      <fldfiltersel></fldfiltersel>
+      <fldfilterval>paymentmethod</fldfilterval>
+    </customfieldfilter>
+  </customfieldfilters>
+</othercustomfield>

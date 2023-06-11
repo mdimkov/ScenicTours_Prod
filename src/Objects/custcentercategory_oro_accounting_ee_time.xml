@@ -1,0 +1,27 @@
+<centercategory scriptid="custcentercategory_oro_accounting_ee_time">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_ee]</centertab>
+  <label>Time Reporting</label>
+  <links>
+    <link>
+      <linkid>TRAN_WEEKLY_TIMESHEET</linkid>
+      <linklabel>Wöchentliche Zeiterfassung</linklabel>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_TIMEAPPROVAL</linkid>
+      <linklabel>Zeiterfassung genehmigen</linklabel>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_223</linkid>
+      <linklabel>Zeit sortiert nach Mitarbeiter</linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_221</linkid>
+      <linklabel>Zeit sortiert nach Dienstleistungstyp</linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

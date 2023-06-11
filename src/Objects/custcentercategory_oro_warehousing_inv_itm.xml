@@ -1,0 +1,27 @@
+<centercategory scriptid="custcentercategory_oro_warehousing_inv_itm">
+  <center>[scriptid=custcenter_oro_warehousing]</center>
+  <centertab>[scriptid=custcentertab_oro_warehousing_inv]</centertab>
+  <label>Artikelstamm</label>
+  <links>
+    <link>
+      <linkid>LIST_ITEM</linkid>
+      <linklabel>Artikel</linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_UNITSTYPE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>ADMI_HIERARCHYMANAGER</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_MERCHANDISEHIERARCHYVERSION</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

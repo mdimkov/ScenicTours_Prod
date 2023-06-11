@@ -1,0 +1,22 @@
+<centercategory scriptid="custcentercategory_oro_accounting_inv_out">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_inv]</centertab>
+  <label>Sending &amp; Shipping</label>
+  <links>
+    <link>
+      <linkid>LIST_SHIPITEM</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_145</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_246</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

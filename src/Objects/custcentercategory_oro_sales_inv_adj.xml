@@ -1,0 +1,32 @@
+<centercategory scriptid="custcentercategory_oro_sales_inv_adj">
+  <center>[scriptid=custcenter_oro_sales]</center>
+  <centertab>[scriptid=custcentertab_oro_sales_inv]</centertab>
+  <label>Invenstory Adjustments &amp; Count</label>
+  <links>
+    <link>
+      <linkid>EDIT_TRAN_INVADJST</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_TRAN_INVWKSHT</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_TRAN_INVCOUNT</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_CREATE_INVCOUNT</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_241</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

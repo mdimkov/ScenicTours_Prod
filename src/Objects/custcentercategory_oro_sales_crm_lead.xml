@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_sales_crm_lead">
+  <center>[scriptid=custcenter_oro_sales]</center>
+  <centertab>[scriptid=custcentertab_oro_sales_crm]</centertab>
+  <label>Leads &amp; Prospects</label>
+  <links>
+    <link>
+      <linkid>LIST_LEAD</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_PROSPECT</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

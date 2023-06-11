@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_warehousing_act_calendar">
+  <center>[scriptid=custcenter_oro_warehousing]</center>
+  <centertab>[scriptid=custcentertab_oro_warehousing_act]</centertab>
+  <label>Calendar</label>
+  <links>
+    <link>
+      <linkid>LIST_CALENDAR</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_CALENDARPREFERENCE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

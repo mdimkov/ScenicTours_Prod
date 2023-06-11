@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_sales_adm_search">
+  <center>[scriptid=custcenter_oro_sales]</center>
+  <centertab>[scriptid=custcentertab_oro_sales_adm]</centertab>
+  <label>Saved Search</label>
+  <links>
+    <link>
+      <linkid>SRCH_SAVEDSEARCH</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_SSCATEGORY</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

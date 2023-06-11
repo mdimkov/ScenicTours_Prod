@@ -1,0 +1,27 @@
+<centercategory scriptid="custcentercategory_oro_sales_inv_itm">
+  <center>[scriptid=custcenter_oro_sales]</center>
+  <centertab>[scriptid=custcentertab_oro_sales_inv]</centertab>
+  <label>Item Master Data</label>
+  <links>
+    <link>
+      <linkid>LIST_ITEM</linkid>
+      <linklabel>Liste an Artikeln 🧾</linklabel>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linkid>ADMI_HIERARCHYMANAGER</linkid>
+      <linklabel>Artikelkatalogstruktur 🔝</linklabel>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_MERCHANDISEHIERARCHYVERSION</linkid>
+      <linklabel>Artikelkatalogstruktur Versionen Artikelkatalogstruktur 🔝</linklabel>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_PRINT_PRICELIST</linkid>
+      <linklabel></linklabel>
+      <shortlist>T</shortlist>
+    </link>
+  </links>
+</centercategory>

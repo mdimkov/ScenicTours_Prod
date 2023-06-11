@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_support_cases_customer">
+  <center>[scriptid=custcenter_oro_support]</center>
+  <centertab>[scriptid=custcentertab_oro_support_cases]</centertab>
+  <label>Customer</label>
+  <links>
+    <link>
+      <linkid>LIST_CUSTJOB</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_CUSTPROFILE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

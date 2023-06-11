@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_sales_adm_mu">
+  <center>[scriptid=custcenter_oro_sales]</center>
+  <centertab>[scriptid=custcentertab_oro_sales_adm]</centertab>
+  <label>Mass Updates</label>
+  <links>
+    <link>
+      <linkid>LIST_BULKOP</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_SAVEDBULKOP</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

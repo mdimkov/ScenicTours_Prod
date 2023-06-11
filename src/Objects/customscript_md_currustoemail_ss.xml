@@ -1,0 +1,32 @@
+<scheduledscript scriptid="customscript_md_currustoemail_ss">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>MD Current Users to Email SS</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/_oro_21291_tm1_integration/scripts/md_currustoemail_ss.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_md_currustoemail_ss">
+      <isdeployed>T</isdeployed>
+      <loglevel>AUDIT</loglevel>
+      <status>SCHEDULED</status>
+      <title>MD Current Users to Email SS</title>
+      <recurrence>
+        <weekly>
+          <everyxweeks>1</everyxweeks>
+          <friday>F</friday>
+          <monday>F</monday>
+          <repeat></repeat>
+          <saturday>F</saturday>
+          <startdate>2022-03-09</startdate>
+          <starttime>09:00:00Z</starttime>
+          <sunday>F</sunday>
+          <thursday>F</thursday>
+          <tuesday>T</tuesday>
+          <wednesday>F</wednesday>
+        </weekly>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

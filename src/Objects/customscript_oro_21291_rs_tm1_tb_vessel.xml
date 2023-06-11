@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_oro_21291_rs_tm1_tb_vessel">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>oro 21291 Restlet TM1 TB Vessels</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/_oro_21291_tm1/scripts/restlet/_oro_21291_rs_tm1_tb_vessel.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_oro_21291_rs_tm1_tb_vessel">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <status>RELEASED</status>
+      <title>oro 21291 Restlet TM1 TB Vessels</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

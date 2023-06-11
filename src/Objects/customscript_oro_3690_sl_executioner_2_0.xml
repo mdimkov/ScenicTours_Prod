@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_oro_3690_sl_executioner_2_0">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>oro 3690 SL Executioner 2.0</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 407612/_oro_3690_bank_reconciliation/Scripts/Server/SuiteLet/_oro_3690_sl_executioner_2.0.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_oro_3690_sl_executioner_2_0">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>oro 3690 SL Executioner 2.0</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

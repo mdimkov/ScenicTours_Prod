@@ -1,0 +1,285 @@
+<customrecordtype scriptid="customrecord_cseg_oro_vessel">
+  <allowattachments>F</allowattachments>
+  <allowinlinedeleting>F</allowinlinedeleting>
+  <allowinlinedetaching>F</allowinlinedetaching>
+  <allowinlineediting>F</allowinlineediting>
+  <allowquickadd>F</allowquickadd>
+  <allowquicksearch>F</allowquicksearch>
+  <customsegment>[type=customsegment, scriptid=cseg_oro_vessel]</customsegment>
+  <enabledle>F</enabledle>
+  <enablekeywords>F</enablekeywords>
+  <enablemailmerge>F</enablemailmerge>
+  <enableoptimisticlocking>F</enableoptimisticlocking>
+  <enablesystemnotes>T</enablesystemnotes>
+  <icon></icon>
+  <iconbuiltin>T</iconbuiltin>
+  <iconindex></iconindex>
+  <includeinsearchmenu>F</includeinsearchmenu>
+  <showcreationdate>F</showcreationdate>
+  <showcreationdateonlist>F</showcreationdateonlist>
+  <showlastmodified>F</showlastmodified>
+  <showlastmodifiedonlist>F</showlastmodifiedonlist>
+  <shownotes>T</shownotes>
+  <showowner>F</showowner>
+  <showownerallowchange>F</showownerallowchange>
+  <showowneronlist>F</showowneronlist>
+  <instances>
+    <instance scriptid="val_89158_6796187_sb1_863">
+      <isinactive>T</isinactive>
+      <name>Africa &amp; ME</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89159_6796187_sb1_277">
+      <isinactive>T</isinactive>
+      <name>Americas</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89160_6796187_sb1_798">
+      <isinactive>T</isinactive>
+      <name>ANZ</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89161_6796187_sb1_140">
+      <isinactive>T</isinactive>
+      <name>Asia</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89162_6796187_sb1_589">
+      <isinactive>F</isinactive>
+      <name>Emerald Azzurra</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89163_6796187_sb1_608">
+      <isinactive>F</isinactive>
+      <name>Emerald Dawn</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89164_6796187_sb1_966">
+      <isinactive>F</isinactive>
+      <name>Emerald Destiny</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89165_6796187_sb1_736">
+      <isinactive>F</isinactive>
+      <name>Emerald Harmony</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89166_6796187_sb1_804">
+      <isinactive>F</isinactive>
+      <name>Emerald Liberte</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89167_6796187_sb1_925">
+      <isinactive>F</isinactive>
+      <name>Emerald Luna</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89168_6796187_sb1_123">
+      <isinactive>F</isinactive>
+      <name>Emerald Radiance</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89169_6796187_sb1_940">
+      <isinactive>F</isinactive>
+      <name>Emerald Sky</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89170_6796187_sb1_733">
+      <isinactive>F</isinactive>
+      <name>Emerald Star</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89171_6796187_sb1_584">
+      <isinactive>F</isinactive>
+      <name>Emerald Sun</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89172_6796187_sb1_459">
+      <isinactive>T</isinactive>
+      <name>Europe</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89173_6796187_sb1_365">
+      <isinactive>T</isinactive>
+      <name>National sales</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89174_6796187_sb1_767">
+      <isinactive>T</isinactive>
+      <name>Newcastle</name>
+      <parent>[scriptid=customrecord_cseg_oro_vessel.val_89160_6796187_sb1_798]</parent>
+    </instance>
+    <instance scriptid="val_89175_6796187_sb1_550">
+      <isinactive>T</isinactive>
+      <name>NSW/ACT</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89176_6796187_sb1_967">
+      <isinactive>T</isinactive>
+      <name>QLD</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89177_6796187_sb1_141">
+      <isinactive>T</isinactive>
+      <name>SA/NT</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89178_6796187_sb1_346">
+      <isinactive>F</isinactive>
+      <name>Scenic Amber</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89179_6796187_sb1_715">
+      <isinactive>F</isinactive>
+      <name>Scenic Aura</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89180_6796187_sb1_307">
+      <isinactive>F</isinactive>
+      <name>Scenic Azure</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89181_6796187_sb1_290">
+      <isinactive>F</isinactive>
+      <name>Scenic Crystal</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89182_6796187_sb1_784">
+      <isinactive>F</isinactive>
+      <name>Scenic Diamond</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89183_6796187_sb1_886">
+      <isinactive>F</isinactive>
+      <name>Scenic Eclipse</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89184_6796187_sb1_835">
+      <isinactive>F</isinactive>
+      <name>Scenic Eclipse 2</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89185_6796187_sb1_566">
+      <isinactive>F</isinactive>
+      <name>Scenic Gem</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89186_6796187_sb1_423">
+      <isinactive>F</isinactive>
+      <name>Scenic Jade</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89187_6796187_sb1_994">
+      <isinactive>F</isinactive>
+      <name>Scenic Jasper</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89188_6796187_sb1_621">
+      <isinactive>F</isinactive>
+      <name>Scenic Jewel</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89189_6796187_sb1_290">
+      <isinactive>F</isinactive>
+      <name>Scenic Opal</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89190_6796187_sb1_418">
+      <isinactive>F</isinactive>
+      <name>Scenic Pearl</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89191_6796187_sb1_370">
+      <isinactive>F</isinactive>
+      <name>Scenic Ruby</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89192_6796187_sb1_438">
+      <isinactive>F</isinactive>
+      <name>Scenic Sapphire</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89193_6796187_sb1_663">
+      <isinactive>F</isinactive>
+      <name>Scenic Spirit</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89194_6796187_sb1_560">
+      <isinactive>F</isinactive>
+      <name>Scenic Tsar</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89195_6796187_sb1_332">
+      <isinactive>T</isinactive>
+      <name>Sydney</name>
+      <parent>[scriptid=customrecord_cseg_oro_vessel.val_89160_6796187_sb1_798]</parent>
+    </instance>
+    <instance scriptid="val_89196_6796187_sb1_462">
+      <isinactive>T</isinactive>
+      <name>VIC/TAS</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_89197_6796187_sb1_368">
+      <isinactive>T</isinactive>
+      <name>WA</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_371538_6796187_sb1_118">
+      <isinactive>T</isinactive>
+      <name>Eclipse 1 🌄1️⃣</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_371539_6796187_sb1_273">
+      <isinactive>T</isinactive>
+      <name>Eclipse 2 🌄2️⃣</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_371540_6796187_sb1_164">
+      <isinactive>F</isinactive>
+      <name>Scenic Helis</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_371541_6796187_sb1_486">
+      <isinactive>F</isinactive>
+      <name>Scenic Neptune</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_371542_6796187_sb1_822">
+      <isinactive>F</isinactive>
+      <name>Scenic Zodiac</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_2785875_6796187_732">
+      <isinactive>F</isinactive>
+      <name>Scenic Zodiac 2</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_2785876_6796187_746">
+      <isinactive>F</isinactive>
+      <name>Scenic Helis 2</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_2785877_6796187_730">
+      <isinactive>F</isinactive>
+      <name>Scenic Neptune 2</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_2785878_6796187_860">
+      <isinactive>F</isinactive>
+      <name>Emerald Sakara</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_2846703_6796187_140">
+      <isinactive>F</isinactive>
+      <name>Corporate</name>
+      <parent></parent>
+    </instance>
+  </instances>
+  <links>
+    <link>
+      <linkcategory>BASICSETUPCOMPANY</linkcategory>
+      <linklabel></linklabel>
+      <linktasktype>LIST</linktasktype>
+    </link>
+  </links>
+</customrecordtype>

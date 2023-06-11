@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_accounting_ar_payments">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_ar]</centertab>
+  <label>Deposits &amp; Payments</label>
+  <links>
+    <link>
+      <linkid>LIST_TRAN_CUSTDEP</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_TRAN_CUSTPYMT</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

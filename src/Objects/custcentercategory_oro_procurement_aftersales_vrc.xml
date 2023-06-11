@@ -1,0 +1,27 @@
+<centercategory scriptid="custcentercategory_oro_procurement_aftersales_vrc">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_aftersales]</centertab>
+  <label>Vendor Credits &amp; Refunds</label>
+  <links>
+    <link>
+      <linkid>TRAN_VENDAUTHCREDIT</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_TRAN_VENDCRED</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_TRAN_VENDCRED</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_VENDAUTHAPPRV</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

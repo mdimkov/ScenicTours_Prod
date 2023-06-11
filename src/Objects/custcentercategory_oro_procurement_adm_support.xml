@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_procurement_adm_support">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_adm]</centertab>
+  <label>Support</label>
+  <links>
+    <link>
+      <linkid>ADMI_ALLOW_LOGIN</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

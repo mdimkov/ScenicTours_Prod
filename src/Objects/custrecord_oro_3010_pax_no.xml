@@ -1,0 +1,35 @@
+<othercustomfield scriptid="custrecord_oro_3010_pax_no">
+  <accesslevel>2</accesslevel>
+  <applyformatting>F</applyformatting>
+  <checkspelling>F</checkspelling>
+  <defaultchecked>F</defaultchecked>
+  <defaultselection></defaultselection>
+  <defaultvalue></defaultvalue>
+  <description></description>
+  <displayheight></displayheight>
+  <displaytype>NORMAL</displaytype>
+  <displaywidth></displaywidth>
+  <dynamicdefault></dynamicdefault>
+  <encryptatrest>F</encryptatrest>
+  <fieldtype>TEXT</fieldtype>
+  <help>The Participant Number (Postal Account Number) is provided by your bank and generally their own postal account number.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>Participant Number (Postal Account No.)</label>
+  <linktext></linktext>
+  <maxlength></maxlength>
+  <maxvalue>999999</maxvalue>
+  <minvalue>0</minvalue>
+  <onparentdelete></onparentdelete>
+  <rectype>-112</rectype>
+  <searchcomparefield></searchcomparefield>
+  <searchdefault></searchdefault>
+  <searchlevel>2</searchlevel>
+  <selectrecordtype></selectrecordtype>
+  <showhierarchy>F</showhierarchy>
+  <showinlist>F</showinlist>
+  <sourcefilterby></sourcefilterby>
+  <sourcefrom></sourcefrom>
+  <sourcelist></sourcelist>
+  <storevalue>T</storevalue>
+</othercustomfield>

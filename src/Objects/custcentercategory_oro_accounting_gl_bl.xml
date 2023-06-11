@@ -1,0 +1,22 @@
+<centercategory scriptid="custcentercategory_oro_accounting_gl_bl">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_gl]</centertab>
+  <label>Balance Sheet</label>
+  <links>
+    <link>
+      <linkid>REPO_NEG202</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_NEG198</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_292</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

@@ -1,0 +1,22 @@
+<centercategory scriptid="custcentercategory_oro_accounting_cash_cc">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_cash]</centertab>
+  <label>Corporate Credit Cards</label>
+  <links>
+    <link>
+      <linkid>LIST_TRAN_CARDCHRG</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_RECONCILE_CC</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_TRAN_CARDCHRG</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

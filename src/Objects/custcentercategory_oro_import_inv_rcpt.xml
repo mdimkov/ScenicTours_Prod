@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_import_inv_rcpt">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_import_tab]</centertab>
+  <label>Import Invoices/Receipts</label>
+  <links>
+    <link>
+      <linkid>ADMI_IMPORTCSV</linkid>
+      <linklabel>Import CSV records</linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

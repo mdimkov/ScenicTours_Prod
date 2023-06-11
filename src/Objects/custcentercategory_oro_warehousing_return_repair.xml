@@ -1,0 +1,27 @@
+<centercategory scriptid="custcentercategory_oro_warehousing_return_repair">
+  <center>[scriptid=custcenter_oro_warehousing]</center>
+  <centertab>[scriptid=custcentertab_oro_warehousing_return]</centertab>
+  <label>Repairs</label>
+  <links>
+    <link>
+      <linkid>LIST_TRAN_SALESORD</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_TRAN_RTNAUTH</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_TRAN_RTNAUTH</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_TRAN_ESTIMATE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

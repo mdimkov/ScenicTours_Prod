@@ -1,0 +1,22 @@
+<centercategory scriptid="custcentercategory_oro_accounting_adm_support">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_adm]</centertab>
+  <label>Support</label>
+  <links>
+    <link>
+      <linkid>ADMI_ALLOW_LOGIN</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_INSTALLBUNDLE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_SUITEAPPLIST</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

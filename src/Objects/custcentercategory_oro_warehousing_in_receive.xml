@@ -1,0 +1,22 @@
+<centercategory scriptid="custcentercategory_oro_warehousing_in_receive">
+  <center>[scriptid=custcenter_oro_warehousing]</center>
+  <centertab>[scriptid=custcentertab_oro_warehousing_in]</centertab>
+  <label>Receiving</label>
+  <links>
+    <link>
+      <linkid>LIST_TRAN_PURCHORD</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_PURCHORDRECEIVE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_RTNAUTHRECEIVE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

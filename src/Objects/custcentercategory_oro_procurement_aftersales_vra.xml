@@ -1,0 +1,37 @@
+<centercategory scriptid="custcentercategory_oro_procurement_aftersales_vra">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_aftersales]</centertab>
+  <label>Vendor Returns (VRAs)</label>
+  <links>
+    <link>
+      <linkid>LIST_TRAN_VENDAUTH</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_TRAN_VENDAUTH</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_VENDAUTHAPPRV</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_VENDAUTHCREDIT</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_TRAN_VENDCRED</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_VENDAUTHRETURN</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

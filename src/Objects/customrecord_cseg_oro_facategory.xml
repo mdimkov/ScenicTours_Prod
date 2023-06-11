@@ -1,0 +1,205 @@
+<customrecordtype scriptid="customrecord_cseg_oro_facategory">
+  <allowattachments>F</allowattachments>
+  <allowinlinedeleting>F</allowinlinedeleting>
+  <allowinlinedetaching>F</allowinlinedetaching>
+  <allowinlineediting>F</allowinlineediting>
+  <allowquickadd>F</allowquickadd>
+  <allowquicksearch>F</allowquicksearch>
+  <customsegment>[type=customsegment, scriptid=cseg_oro_facategory]</customsegment>
+  <enabledle>F</enabledle>
+  <enablekeywords>F</enablekeywords>
+  <enablemailmerge>F</enablemailmerge>
+  <enableoptimisticlocking>F</enableoptimisticlocking>
+  <enablesystemnotes>T</enablesystemnotes>
+  <icon></icon>
+  <iconbuiltin>T</iconbuiltin>
+  <iconindex></iconindex>
+  <includeinsearchmenu>F</includeinsearchmenu>
+  <showcreationdate>F</showcreationdate>
+  <showcreationdateonlist>F</showcreationdateonlist>
+  <showlastmodified>F</showlastmodified>
+  <showlastmodifiedonlist>F</showlastmodifiedonlist>
+  <shownotes>T</shownotes>
+  <showowner>F</showowner>
+  <showownerallowchange>F</showownerallowchange>
+  <showowneronlist>F</showowneronlist>
+  <instances>
+    <instance scriptid="val_29891_6796187_263">
+      <isinactive>F</isinactive>
+      <name>Owner Supplies</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_29892_6796187_372">
+      <isinactive>F</isinactive>
+      <name>Furniture</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29891_6796187_263]</parent>
+    </instance>
+    <instance scriptid="val_29893_6796187_331">
+      <isinactive>F</isinactive>
+      <name>Hotel Supplies</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29891_6796187_263]</parent>
+    </instance>
+    <instance scriptid="val_29894_6796187_394">
+      <isinactive>F</isinactive>
+      <name>Galley and Restaurant</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29891_6796187_263]</parent>
+    </instance>
+    <instance scriptid="val_29895_6796187_864">
+      <isinactive>F</isinactive>
+      <name>IT &amp; Consumer Electronics</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29891_6796187_263]</parent>
+    </instance>
+    <instance scriptid="val_29896_6796187_503">
+      <isinactive>F</isinactive>
+      <name>Technical and Nautical</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29891_6796187_263]</parent>
+    </instance>
+    <instance scriptid="val_29897_6796187_292">
+      <isinactive>F</isinactive>
+      <name>Sports Equipment and Gym</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29891_6796187_263]</parent>
+    </instance>
+    <instance scriptid="val_29898_6796187_494">
+      <isinactive>F</isinactive>
+      <name>Other Equipment</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29891_6796187_263]</parent>
+    </instance>
+    <instance scriptid="val_29899_6796187_132">
+      <isinactive>F</isinactive>
+      <name>Gastronomy</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29891_6796187_263]</parent>
+    </instance>
+    <instance scriptid="val_29900_6796187_152">
+      <isinactive>F</isinactive>
+      <name>RCV</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_29901_6796187_474">
+      <isinactive>F</isinactive>
+      <name>Hull</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29900_6796187_152]</parent>
+    </instance>
+    <instance scriptid="val_29902_6796187_441">
+      <isinactive>F</isinactive>
+      <name>Engines</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29900_6796187_152]</parent>
+    </instance>
+    <instance scriptid="val_29903_6796187_687">
+      <isinactive>F</isinactive>
+      <name>Cabling &amp; Electrical Installations</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29900_6796187_152]</parent>
+    </instance>
+    <instance scriptid="val_29904_6796187_235">
+      <isinactive>F</isinactive>
+      <name>A/C &amp; Heating</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29900_6796187_152]</parent>
+    </instance>
+    <instance scriptid="val_29905_6796187_575">
+      <isinactive>F</isinactive>
+      <name>Public Spaces &amp; Cabins Fixed Furniture</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29900_6796187_152]</parent>
+    </instance>
+    <instance scriptid="val_29906_6796187_450">
+      <isinactive>F</isinactive>
+      <name>Sewage Treatment Plant with Black &amp; Gray Water Systems</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29900_6796187_152]</parent>
+    </instance>
+    <instance scriptid="val_29907_6796187_499">
+      <isinactive>F</isinactive>
+      <name>Galley / Bar / Buffet fixed equipment</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29900_6796187_152]</parent>
+    </instance>
+    <instance scriptid="val_29908_6796187_329">
+      <isinactive>F</isinactive>
+      <name>OCV</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_29909_6796187_968">
+      <isinactive>F</isinactive>
+      <name>Vessel Build</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29908_6796187_329]</parent>
+    </instance>
+    <instance scriptid="val_29910_6796187_438">
+      <isinactive>F</isinactive>
+      <name>Interiors</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29908_6796187_329]</parent>
+    </instance>
+    <instance scriptid="val_29911_6796187_877">
+      <isinactive>F</isinactive>
+      <name>Swimming Pool and Spa</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29908_6796187_329]</parent>
+    </instance>
+    <instance scriptid="val_29912_6796187_748">
+      <isinactive>F</isinactive>
+      <name>Clinic</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29908_6796187_329]</parent>
+    </instance>
+    <instance scriptid="val_29913_6796187_144">
+      <isinactive>F</isinactive>
+      <name>Other Equipment</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29908_6796187_329]</parent>
+    </instance>
+    <instance scriptid="val_29914_6796187_851">
+      <isinactive>F</isinactive>
+      <name>Asset Under Construction</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_29915_6796187_134">
+      <isinactive>F</isinactive>
+      <name>Shipyard Steelwork, Piping, Fitting out, Installation</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29914_6796187_851]</parent>
+    </instance>
+    <instance scriptid="val_29916_6796187_356">
+      <isinactive>F</isinactive>
+      <name>Air-conditioning and Ventilation</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29914_6796187_851]</parent>
+    </instance>
+    <instance scriptid="val_29917_6796187_102">
+      <isinactive>F</isinactive>
+      <name>Accommodation, Interiors, Public spaces, Cabins</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29914_6796187_851]</parent>
+    </instance>
+    <instance scriptid="val_29918_6796187_341">
+      <isinactive>F</isinactive>
+      <name>Electrical Installation</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29914_6796187_851]</parent>
+    </instance>
+    <instance scriptid="val_29919_6796187_513">
+      <isinactive>F</isinactive>
+      <name>Engine room Installation</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29914_6796187_851]</parent>
+    </instance>
+    <instance scriptid="val_29920_6796187_415">
+      <isinactive>F</isinactive>
+      <name>Systems</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29914_6796187_851]</parent>
+    </instance>
+    <instance scriptid="val_29921_6796187_336">
+      <isinactive>F</isinactive>
+      <name>General</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29914_6796187_851]</parent>
+    </instance>
+    <instance scriptid="val_29922_6796187_205">
+      <isinactive>F</isinactive>
+      <name>Marina and Other Sport Equipment</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29914_6796187_851]</parent>
+    </instance>
+    <instance scriptid="val_29923_6796187_324">
+      <isinactive>F</isinactive>
+      <name>Owner Supply</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29914_6796187_851]</parent>
+    </instance>
+    <instance scriptid="val_32112_6796187_960">
+      <isinactive>F</isinactive>
+      <name>Mobile equipment</name>
+      <parent>[scriptid=customrecord_cseg_oro_facategory.val_29900_6796187_152]</parent>
+    </instance>
+  </instances>
+  <links>
+    <link>
+      <linkcategory>BASICSETUPCOMPANY</linkcategory>
+      <linklabel></linklabel>
+      <linktasktype>LIST</linktasktype>
+    </link>
+  </links>
+</customrecordtype>

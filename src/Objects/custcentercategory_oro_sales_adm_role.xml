@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_sales_adm_role">
+  <center>[scriptid=custcenter_oro_sales]</center>
+  <centertab>[scriptid=custcentertab_oro_sales_adm]</centertab>
+  <label>Zugang &amp; Rechte</label>
+  <links>
+    <link>
+      <linkid>LIST_ROLE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_USER</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

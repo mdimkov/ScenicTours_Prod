@@ -1,0 +1,402 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+
+<pdfset>
+	<pdf>
+        <head>
+            <style type="text/css">
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                    padding: 0cm;
+                }
+
+                table,
+                tr,
+                td {
+                    border-collapse: collapse;
+                }
+
+                tr,
+                td {
+                    padding: 0px;
+                }
+
+                .heading {
+                    padding-top: 0.5cm;
+                    padding-bottom: 0.05cm;
+                    font-size: 6pt;
+                    font-weight: bold;
+                }
+
+                .font1 {
+                    font-size: 6pt;
+                    font-weight: bold;
+                }
+
+                .font2 {
+                    font-size: 8pt;
+                }
+
+                .font3 {
+                    font-size: 11pt;
+                    font-weight: bold;
+                }
+
+                .font4 {
+                    font-size: 8pt;
+                    font-weight: bold;
+                    padding-bottom: 0.05cm;
+                }
+
+                .font5 {
+                    font-size: 10pt;
+                }
+
+                #bodytable {
+                    padding-left: 0cm;
+                    padding-right: 0cm;
+                    padding-bottom: 0cm;
+                    width: 21cm;
+                    height: 10.5cm;
+                    table-layout: fixed;
+                }
+
+                .box {
+                    width: 3cm;
+                    height: 1cm;
+                    position: relative;
+                }
+
+                .box > div.corner {
+                    display: block;
+                    position: absolute;
+                    width: 0.2cm;
+                    height: 0.2cm;
+                }
+
+                .top {
+                    top: 0px;
+                    border-top: 0.75px solid black;
+                }
+
+                .bottom {
+                    bottom: 0px;
+                    border-bottom: 0.75px solid black;
+                }
+
+                .left {
+                    left: 0px;
+                    border-left: 0.75px solid black;
+                }
+
+                .right {
+                    right: 0px;
+                    border-right: 0.75px solid black;
+                }
+              
+            </style>
+        </head>
+
+        <body size="A4">
+        
+          <!-- Prepare dummy data for preview mode -->
+    	  <#if record.tranid == "12345678901234567890">
+      		<#assign content = "SPC<br />0200<br />1<br />CH17<br />K<br />Dummy Company<br />12, Dummy Address<br /><br />12345<br />Dummy City<br />CH<br /><br /><br /><br /><br /><br /><br /><br />12345.67<br />CFH<br />K<br />Dummy Debitor<br />Dummy Debitor Address<br /><br />3000<br />Dummytown<br />CH<br />QRR<br />123456789012345678901234567<br /><br />EPD"?split("<br />")>
+          <#else>
+            <#assign content = record.custbody_oro_3010_qr_content?split("<br />")>
+          </#if>
+		  
+          <#if content?has_content>
+            <#assign iban = content[3]>
+            <#assign creditorName = content[5]>
+            <#assign creditorAddress1 = content[6]>
+            <#assign creditorAddress2 = content[7]>
+            <#assign creditorZip = content[8]>
+            <#assign creditorCity = content[9]>
+            <#assign amount = content[18]> 
+            <#assign currency = content[19]>
+            <#assign debtorName = content[21]>
+            <#assign debtorAddress1 = content[22]>
+            <#assign debtorAddress2 = content[23]>
+            <#assign debtorZip = content[24]>
+            <#assign debtorCity = content[25]>
+            <#assign reference = content[28]>    
+
+           <#if iban?length == 21>    
+             <#assign splitiban1 = iban[0..3]>
+             <#assign splitiban2 = iban[4..7]>
+             <#assign splitiban3 = iban[8..11]>
+             <#assign splitiban4 = iban[12..15]>
+             <#assign splitiban5 = iban[16..19]>
+             <#assign splitiban6 = iban[20]>
+           </#if>
+             
+		   <#if reference?length == 27>
+      	     <#assign splitqrreference1 = reference[0..1]>
+             <#assign splitqrreference2 = reference[2..6]>
+             <#assign splitqrreference3 = reference[7..11]>
+             <#assign splitqrreference4 = reference[12..16]>
+             <#assign splitqrreference5 = reference[17..21]>
+             <#assign splitqrreference6 = reference[22..26]>
+           </#if>
+             
+            <table style="border-top: thin dashed black;" id="bodytable" valign="bottom">
+                <tr>
+                    <td style="width:6.2cm; border-right:thin dashed black;">
+                        <table style="padding:0.5cm">
+                            <tr>
+                                <td class="font3">Receipt</td>
+                            </tr>
+                            <tr>
+                                <td class="heading">Account/Payable to</td>
+                            </tr>
+                            <tr> 
+                                <td class="font2">
+                                  	<#if iban?length == 21>  
+                                  	${splitiban1} ${splitiban2} ${splitiban3} ${splitiban4} ${splitiban5} ${splitiban6} <br />
+                                    <#else>
+                                    ${iban} <br />  
+                                    </#if>  
+                                  	${creditorName}<br />
+                                  	<#if creditorAddress1?? && creditorAddress2 == "">
+                                  		${creditorAddress1}<br />
+                                  	<#elseif creditorAddress2?? && creditorAddress1 == "">
+                                    	${creditorAddress2}<br />
+                                  	<#elseif creditorAddress1?has_content && creditorAddress2?has_content>
+                                    	${creditorAddress1}  ${creditorAddress2}<br />
+                                  	</#if>
+                                    ${creditorZip} ${creditorCity}  
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="heading">Reference</td>
+                            </tr>
+                            <tr>
+                               <#if reference?length == 27>
+                                   <td class="font2">${splitqrreference1} ${splitqrreference2} ${splitqrreference3} ${splitqrreference4} ${splitqrreference5} 			${splitqrreference6}</td>
+                                 <#else>
+                                    <td class="font2">${reference}</td>
+                                </#if>  
+                               
+                            </tr>
+                            <tr>
+                                <td class="heading">Payable by</td>
+                            </tr>
+                        
+                            <#if debtorAddress1?? || debtorAddress2?? >
+                            <tr>
+                                <td class="font2" style="width:5.2cm; height: 2cm; vertical-align: top;">
+                                  ${debtorName} <br />
+                                  <#if debtorAddress1?? && debtorAddress2 == "">
+                                  		${debtorAddress1}<br />
+                                  <#elseif debtorAddress2?? && debtorAddress1 == "">
+                                    	${debtorAddress2}<br />
+                                  <#elseif debtorAddress1?has_content && debtorAddress2?has_content>
+                                    	${debtorAddress1}  ${debtorAddress2}<br />
+                                  </#if>
+                                  ${debtorZip} ${debtorCity}  
+                                </td>
+                            </tr>
+                            <#else>
+                             <tr>
+                                <td class="font2" style="width:5.2cm; height: 2cm; vertical-align: top;">
+                                <table>
+                                    <tr>
+                                    <td class="box" style="height:1.8cm; width:5cm;"><div class="corner top left"></div></td>
+                                    <td class="box" style="width:0.2cm;"><div class="corner top right"></div></td>
+                                    </tr>
+                                    <tr>
+                                    <td class="box" style="height:0.2cm;"><div class="corner bottom left"></div></td>
+                                    <td class="box" style="height:0.2cm;width:0.2cm;"><div class="corner bottom right"></div></td>
+                                    </tr>
+                                </table>                               		
+                               </td>
+                            </tr>
+                			</#if>
+                            <tr>
+                                <td>
+                                        <table style="height:1cm; padding-top:0.4cm; padding-bottom: 0.4cm;">
+                                            <#if amount??>
+                                                <tr>
+                                                    <td class="font1" style="width: 1.2cm;">Currency</td>
+                                                    <td class="font1" style="width: 4cm; height:0.2cm">Amount</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font2">${currency}</td>
+                                                    <td class="font2" style="height:0.8cm;">${amount}</td>
+                                                </tr>
+                                                <#else>
+                                                    <tr>
+                                                        <td class="font1" style="width: 1.2cm; height:0.2cm; padding-bottom: 0.05cm;">Currency
+                                                        </td>
+                                                        <td class="font1" style="width: 1cm; padding-bottom: 0.05cm;">Amount</td>
+                                                        <td rowspan="2" style="width: 3cm;">
+                                                          <table>
+                                                            <tr>
+                                                              <td class="box" style="width:2.8cm;"><div class="corner top left"></div></td>
+                                                              <td class="box" style="width:0.2cm;"><div class="corner top right"></div></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td class="box" style="height:0.2cm;"><div class="corner bottom left"></div></td>
+                                                              <td class="box" style="height:0.2cm;width:0.2cm;"><div class="corner bottom right"></div></td>
+                                                            </tr>
+                                                          </table>
+                     								    </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="font2">${currency}</td>
+                                                        <td class="font2" style="height:0.8cm;"></td>
+                                                    </tr>
+                                            </#if>
+                                        </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font1" style="align: right;">
+                                    Acceptance Point</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width: 5.6cm;" valign="top">
+                        <table style="padding-left:0.5cm; padding-right:0.5cm; padding-top:0.5cm;">
+                            <tr>
+                                <td valign="top" class="font3" style="padding-bottom:0.5cm;">
+                                    Payment Part
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-top:0.5cm;">
+                                  	<@filecabinet nstype="image" src="${record.custbody_oro_3010_qr_code_url}" style="width:4.6cm; height:4.6cm;"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="padding-left:0.5cm; padding-top:0.5cm;">
+                            <#if amount??>
+                                <tr>
+                                    <td class="font4" style="width:1.8cm">Currency</td>
+                                    <td class="font4">Amount</td>
+                                </tr>
+                                <tr>
+                                    <td class="font5">${currency}</td>
+                                    <td style="height:1.5cm; width: 4cm;" class="font5">${amount}</td>
+                                </tr>
+                                <#else>
+                                     <tr>
+                                      <td>
+                                          <table>
+                                              <tr>
+                                                  <td class="font4" style="width:1.8cm;">Currency</td>
+                                                  <td class="font4">Amount</td>
+                                              </tr>
+                                          </table>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>
+                                          <table>
+                                              <tr>
+                                                  <td class="font5" style="width:1.2cm;">${currency}</td>
+                                                  <td style="width: 4cm; height:1.5cm;">
+                                                	 <table>
+                                                      <tr>
+                                                        <td class="box" style="width:3.6cm; height:1.3cm"><div class="corner top left"></div></td>
+                                                        <td class="box" style="width:0.2cm;"><div class="corner top right"></div></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="box" style="height:0.2cm;"><div class="corner bottom left"></div></td>
+                                                        <td class="box" style="height:0.2cm;width:0.2cm;"><div class="corner bottom right"></div></td>
+                                                      </tr>
+                                                    </table>
+                                                 </td>
+                                              </tr>
+                                          </table>
+                                      </td>
+                                  </tr>
+                            </#if>
+                        </table>
+                    </td>
+                    <td style="width: 9.2cm;" valign="top">
+                        <table style="padding-top: 0.5cm; padding-right: 0.5cm; padding-bottom:0.5cm;">
+                            <tr>
+                                <td class="font4">Account/payable to</td>
+                            </tr>
+                            <tr>
+                                <td class="font5">
+                                  	<#if iban?length == 21>  
+                                  	${splitiban1} ${splitiban2} ${splitiban3} ${splitiban4} ${splitiban5} ${splitiban6} <br />
+                                    <#else>
+                                    ${iban} <br />  
+                                    </#if>  
+                                   ${creditorName}<br />
+                                  	<#if creditorAddress1?? && creditorAddress2 == "">
+                                  		${creditorAddress1}<br />
+                                  	<#elseif creditorAddress2?? && creditorAddress1 == "">
+                                    	${creditorAddress2}<br />
+                                  	<#elseif creditorAddress1?has_content && creditorAddress2?has_content>
+                                    	${creditorAddress1}  ${creditorAddress2}<br />
+                                  	</#if>
+                                   ${creditorZip} ${creditorCity}  
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="font4" style="padding-top: 0.5cm;">Reference</td>
+                            </tr>
+                            <tr>
+                                 <#if reference?length == 27>
+                                   <td class="font5">${splitqrreference1} ${splitqrreference2} ${splitqrreference3} ${splitqrreference4} ${splitqrreference5} 			${splitqrreference6}</td>
+                                 <#else>
+                                    <td class="font5">${reference}</td>
+                                </#if>  
+                            </tr>
+                          	<#assign ai = 0>
+                            <#if ai == 1>
+                            <tr>
+                                <td class="font4" style="padding-top: 0.5cm;">Additional Information</td>
+                            </tr>
+                            <tr>
+                                <td class="font5">//S1/10/X.66711//21132222//22123223231 <br />
+                                    078966453657980
+                                </td>
+                            </tr>
+							</#if>  
+                            <tr>
+                                <td class="font4" style="padding-top: 0.5cm;">Payable by</td>
+                            </tr>
+                            <tr>
+                              	<#if debtorAddress1?? || debtorAddress2??>
+                                <td class="font5" style="width:6.5cm;height:2.5cm">
+                                  ${debtorName} <br />
+                                  <#if debtorAddress1?? && debtorAddress2 == "">
+                                  		${debtorAddress1}<br />
+                                  <#elseif debtorAddress2?? && debtorAddress1 == "">
+                                    	${debtorAddress2}<br />
+                                  <#elseif debtorAddress1?has_content && debtorAddress2?has_content>
+                                    	${debtorAddress1}  ${debtorAddress2}<br />
+                                  </#if>
+                                  ${debtorZip} ${debtorCity}    
+                                </td>
+                                <#else>
+                                  <td>
+                                  	 <table>
+                                      <tr>
+                                        <td class="box" style="height:2.5cm; width:6.5cm;"><div class="corner top left"></div></td>
+                                        <td class="box" style="width:0.2cm;"><div class="corner top right"></div></td>
+                                        </tr>
+                                        <tr>
+                                        <td class="box" style="height:0.2cm;"><div class="corner bottom left"></div></td>
+                                        <td class="box" style="height:0.2cm;width:0.2cm;"><div class="corner bottom right"></div></td>
+                                      </tr>
+                                      </table>
+                                  </td>
+                                </#if>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+             <#else>
+                <br />
+            </#if>   
+                                  
+        </body>
+    </pdf>
+</pdfset>

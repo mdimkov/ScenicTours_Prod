@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_procurement_purchase_approve">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_purchase]</centertab>
+  <label>Approve Orders</label>
+  <links>
+    <link>
+      <linkid>TRAN_APPROVAL_PURCHORD</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_OUTBOUNDREQUEST</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

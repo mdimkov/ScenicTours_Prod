@@ -1,0 +1,57 @@
+<!-- Do not modify the contents of the SDF XML definition structure located under "CDATA" section of this XML, as this may corrupt the Workbook/Dataset data when you deploy the modified object to your NetSuite account. !-->
+<workbook scriptid="custworkbook_oro_tbs_bookcurrency">
+  <name translate="T">[scriptid=custcollectiontranslations_workbook_4_c2b451a6b8da4d038d78d.workbook_name_32_1]</name>
+  <dependencies>
+    <dependency>[scriptid=custdataset8]</dependency>
+    <dependency>[scriptid=custcollectiontranslations_pivot_6_a8185e43c4dd4b6d89f11a79.report_name_32_3]</dependency>
+  </dependencies>
+  <definition><![CDATA[<root>
+<Workbook>
+  <_T_>workbook</_T_>
+  <id type="null"/>
+  <scriptId type="null"/>
+  <applicationId type="null"/>
+  <version>1.1.1</version>
+  <name>
+    <translationScriptId>custcollectiontranslations_workbook_4_c2b451a6b8da4d038d78d.workbook_name_32_1</translationScriptId>
+  </name>
+  <audience>
+    <AudienceItems type="array"/>
+    <isPublic type="boolean">false</isPublic>
+  </audience>
+  <ownerId>5</ownerId>
+  <description type="null"/>
+  <dataViewIDs type="array"/>
+  <pivotIDs type="array">
+    <_ITEM_>custpivot6_16391548158987869825</_ITEM_>
+  </pivotIDs>
+  <chartIDs type="array"/>
+</Workbook>
+<pivots type="array">
+  <_ITEM_>
+    <_T_>pivot</_T_>
+    <id type="null"/>
+    <scriptId>custpivot6_16391548158987869825</scriptId>
+    <applicationId type="null"/>
+    <version>1.2021.2</version>
+    <name>
+      <translationScriptId>custcollectiontranslations_pivot_6_a8185e43c4dd4b6d89f11a79.report_name_32_3</translationScriptId>
+    </name>
+    <workbook>custworkbook_oro_tbs_bookcurrency</workbook>
+    <datasets type="array">
+      <_ITEM_>custdataset8</_ITEM_>
+    </datasets>
+    <format>{"view":{},"layoutItem":{}}</format>
+    <order>0</order>
+    <definition>&lt;root>&lt;version>1&lt;/version>&lt;rowAxis>&lt;dimensionTree>&lt;_T_>section&lt;/_T_>&lt;id>9&lt;/id>&lt;children type="array">&lt;_ITEM_>&lt;_T_>dataDimension&lt;/_T_>&lt;id>8&lt;/id>&lt;items type="array">&lt;_ITEM_>&lt;id>6&lt;/id>&lt;expression>&lt;function>field&lt;/function>&lt;args>&lt;type>&lt;_T_>recordType&lt;/_T_>&lt;id>record_transactionlines.accountingimpact.account&lt;/id>&lt;/type>&lt;dataSourceId>custdataset8&lt;/dataSourceId>&lt;fieldId>transactionlines.accountingimpact.account&lt;/fieldId>&lt;/args>&lt;/expression>&lt;/_ITEM_>&lt;/items>&lt;/_ITEM_>&lt;/children>&lt;/dimensionTree>&lt;sorting type="array">&lt;_ITEM_>&lt;_T_>sortDefinition&lt;/_T_>&lt;sortedNodes>&lt;_T_>reportNodePathSelector&lt;/_T_>&lt;selectors type="array">&lt;_ITEM_>&lt;_T_>descendantOrSelfNodesSelector&lt;/_T_>&lt;/_ITEM_>&lt;_ITEM_>&lt;_T_>dimensionSelector&lt;/_T_>&lt;dimension>&lt;ref>8&lt;/ref>&lt;/dimension>&lt;/_ITEM_>&lt;/selectors>&lt;/sortedNodes>&lt;sortBy type="array">&lt;_ITEM_>&lt;_T_>sortByDataDimensionItem&lt;/_T_>&lt;dataDimensionItem>&lt;ref>6&lt;/ref>&lt;/dataDimensionItem>&lt;comparator>&lt;_T_>recordDisplayValueComparator&lt;/_T_>&lt;internalComparator>&lt;_T_>textComparator&lt;/_T_>&lt;ignoreCase type="boolean">true&lt;/ignoreCase>&lt;locale>&lt;_T_>userPreferenceLocaleProvider&lt;/_T_>&lt;/locale>&lt;/internalComparator>&lt;/comparator>&lt;/_ITEM_>&lt;/sortBy>&lt;/_ITEM_>&lt;/sorting>&lt;/rowAxis>&lt;columnAxis>&lt;dimensionTree>&lt;_T_>section&lt;/_T_>&lt;id>11&lt;/id>&lt;children type="array">&lt;_ITEM_>&lt;_T_>dataDimension&lt;/_T_>&lt;id>10&lt;/id>&lt;children type="array">&lt;_ITEM_>&lt;ref>5&lt;/ref>&lt;/_ITEM_>&lt;/children>&lt;items type="array">&lt;_ITEM_>&lt;id>1&lt;/id>&lt;expression>&lt;function>field&lt;/function>&lt;args>&lt;type>&lt;_T_>recordType&lt;/_T_>&lt;id>record_transactionlines.subsidiary&lt;/id>&lt;/type>&lt;dataSourceId>custdataset8&lt;/dataSourceId>&lt;fieldId>transactionlines.subsidiary&lt;/fieldId>&lt;/args>&lt;/expression>&lt;/_ITEM_>&lt;/items>&lt;/_ITEM_>&lt;/children>&lt;/dimensionTree>&lt;sorting type="array">&lt;_ITEM_>&lt;_T_>sortDefinition&lt;/_T_>&lt;sortedNodes>&lt;_T_>reportNodePathSelector&lt;/_T_>&lt;selectors type="array">&lt;_ITEM_>&lt;_T_>descendantOrSelfNodesSelector&lt;/_T_>&lt;/_ITEM_>&lt;_ITEM_>&lt;_T_>dimensionSelector&lt;/_T_>&lt;dimension>&lt;ref>10&lt;/ref>&lt;/dimension>&lt;/_ITEM_>&lt;/selectors>&lt;/sortedNodes>&lt;sortBy type="array">&lt;_ITEM_>&lt;_T_>sortByDataDimensionItem&lt;/_T_>&lt;dataDimensionItem>&lt;ref&gt;1&lt;/ref>&lt;/dataDimensionItem>&lt;comparator>&lt;_T_>recordDisplayValueComparator&lt;/_T_>&lt;internalComparator>&lt;_T_>textComparator&lt;/_T_>&lt;ignoreCase type="boolean">true&lt;/ignoreCase>&lt;locale>&lt;_T_>userPreferenceLocaleProvider&lt;/_T_>&lt;/locale>&lt;desc type="boolean">true&lt;/desc>&lt;/internalComparator>&lt;/comparator>&lt;/_ITEM_>&lt;/sortBy>&lt;/_ITEM_>&lt;/sorting>&lt;uiSettings>&lt;headerAlwaysVisible type="boolean">true&lt;/headerAlwaysVisible>&lt;/uiSettings>&lt;/columnAxis>&lt;measures type="array">&lt;_ITEM_>&lt;_T_>dataMeasure&lt;/_T_>&lt;id>5&lt;/id>&lt;aggregation>sum&lt;/aggregation>&lt;expression>&lt;function>field&lt;/function>&lt;args>&lt;type>&lt;_T_>currencyType&lt;/_T_>&lt;consolidable type="boolean">true&lt;/consolidable>&lt;/type>&lt;dataSourceId>custdataset8&lt;/dataSourceId>&lt;fieldId>transactionlines.accountingimpact.amount&lt;/fieldId>&lt;/args>&lt;/expression>&lt;/_ITEM_>&lt;/measures>&lt;/root></definition>
+  </_ITEM_>
+</pivots>
+<charts type="array"/>
+<dataViews type="array"/>
+<datasetLinks type="array"/>
+</root>]]></definition>
+  <pivots>
+    <pivot scriptid="custpivot6_16391548158987869825">
+    </pivot>
+  </pivots>
+</workbook>

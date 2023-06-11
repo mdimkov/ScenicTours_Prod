@@ -1,0 +1,13 @@
+<fiparserplugin scriptid="customscript_oro_3690_fin_pi_parser">
+  <description></description>
+  <isinactive>F</isinactive>
+  <loglevel>DEBUG</loglevel>
+  <name>_oro_3690_fin_pi_parser</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <runasrole></runasrole>
+  <scriptfile>[/SuiteBundles/Bundle 407612/_oro_3690_bank_reconciliation/Scripts/Server/Plug-in/_oro_3690_fin_pi_parser.js]</scriptfile>
+  <status>RELEASED</status>
+</fiparserplugin>

@@ -1,0 +1,13 @@
+<centercategory scriptid="custcentercategory_oro_3690_bank_integration">
+  <center>BASIC</center>
+  <centertab>BASICCENTERTRANSACTIONS</centertab>
+  <label>Bank Integration</label>
+  <links>
+    <link>
+      <linklabel>Import History</linklabel>
+      <linkobject>[scriptid=customrecord_oro_3690_bank_import_histor]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

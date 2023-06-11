@@ -1,0 +1,41 @@
+<othercustomfield scriptid="custrecord_oro_main_tax_reg_num">
+  <accesslevel>2</accesslevel>
+  <applyformatting>F</applyformatting>
+  <checkspelling>F</checkspelling>
+  <defaultchecked>F</defaultchecked>
+  <defaultselection></defaultselection>
+  <defaultvalue></defaultvalue>
+  <description>Created 11/2022 by MDIMKOV&#xd;
+This field is used to reflect the main tax registration number on subsidiary level, which is later used on invoice and credit memo templates; values in this field are entered manually&#xd;
+for more information please contact&#xd;
+milcho.dimkov@scenic.eu</description>
+  <displayheight></displayheight>
+  <displaytype>NORMAL</displaytype>
+  <displaywidth></displaywidth>
+  <dynamicdefault></dynamicdefault>
+  <encryptatrest>F</encryptatrest>
+  <fieldtype>TEXT</fieldtype>
+  <help>Created 11/2022 by MDIMKOV&#xd;
+This field is used to reflect the main tax registration number on subsidiary level, which is later used on invoice and credit memo templates; values in this field are entered manually&#xd;
+for more information please contact&#xd;
+milcho.dimkov@scenic.eu</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>Main Tax Registration Number</label>
+  <linktext></linktext>
+  <maxlength></maxlength>
+  <maxvalue></maxvalue>
+  <minvalue></minvalue>
+  <onparentdelete></onparentdelete>
+  <rectype>-117</rectype>
+  <searchcomparefield></searchcomparefield>
+  <searchdefault></searchdefault>
+  <searchlevel>2</searchlevel>
+  <selectrecordtype></selectrecordtype>
+  <showhierarchy>F</showhierarchy>
+  <showinlist>F</showinlist>
+  <sourcefilterby></sourcefilterby>
+  <sourcefrom></sourcefrom>
+  <sourcelist></sourcelist>
+  <storevalue>T</storevalue>
+</othercustomfield>

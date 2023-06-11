@@ -1,0 +1,5 @@
+<centercategory scriptid="custcentercategory_oro_accounting_ap_amortisation">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_ap]</centertab>
+  <label>Amortisation</label>
+</centercategory>

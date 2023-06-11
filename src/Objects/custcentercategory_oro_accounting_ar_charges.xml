@@ -1,0 +1,5 @@
+<centercategory scriptid="custcentercategory_oro_accounting_ar_charges">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_ar]</centertab>
+  <label>Dunning</label>
+</centercategory>

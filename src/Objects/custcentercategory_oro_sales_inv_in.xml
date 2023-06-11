@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_sales_inv_in">
+  <center>[scriptid=custcenter_oro_sales]</center>
+  <centertab>[scriptid=custcentertab_oro_sales_inv]</centertab>
+  <label>Receiving</label>
+  <links>
+    <link>
+      <linkid>TRAN_PURCHORDRECEIVE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_RTNAUTHRECEIVE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

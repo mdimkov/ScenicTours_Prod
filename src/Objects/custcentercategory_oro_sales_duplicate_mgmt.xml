@@ -1,0 +1,22 @@
+<centercategory scriptid="custcentercategory_oro_sales_duplicate_mgmt">
+  <center>[scriptid=custcenter_oro_sales]</center>
+  <centertab>[scriptid=custcentertab_oro_sales_adm]</centertab>
+  <label>Duplicate Management</label>
+  <links>
+    <link>
+      <linkid>ADMI_DUPLICATESETUP</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_ENTITY_DUPLICATES</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_DUPLICATE_RESOLUTION_STATUS</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_accounting_ap_vendors">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_ap]</centertab>
+  <label>Vendor Data</label>
+  <links>
+    <link>
+      <linkid>LIST_VENDOR</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_procurement_cc_ticket">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_cc]</centertab>
+  <label>Tickets</label>
+  <links>
+    <link>
+      <linkid>LIST_SUPPORTCASE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_CASEISSUE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

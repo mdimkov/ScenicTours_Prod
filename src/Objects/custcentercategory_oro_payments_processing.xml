@@ -1,0 +1,43 @@
+<centercategory scriptid="custcentercategory_oro_payments_processing">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_payments]</centertab>
+  <label>Payment Processing</label>
+  <links>
+    <link>
+      <linklabel>Payment File Administration Results</linklabel>
+      <linkobject>[scriptid=customsearch_2663_payment_file_admin]</linkobject>
+      <linktasktype>SRCH_RSLT</linktasktype>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linklabel>Generic Pay Processing &amp; File Creation</linklabel>
+      <linkobject>[scriptid=customscript_2663_payment_selection_s]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linklabel>Bill Payment Batches Results</linklabel>
+      <linkobject>[scriptid=customsearch_2663_payment_batches]</linkobject>
+      <linktasktype>SRCH_RSLT</linktasktype>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linklabel>Bill Payment Batches Results</linklabel>
+      <linkobject>[scriptid=customscript_2663_cust_ref_selection_s]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linklabel>Bill Payment Batches Results</linklabel>
+      <linkobject>[scriptid=customscript_2663_batch_selection_main_s]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linklabel>Bill Payment Batches Results</linklabel>
+      <linkobject>[scriptid=customlist_2663_batch_status]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>T</shortlist>
+    </link>
+  </links>
+</centercategory>

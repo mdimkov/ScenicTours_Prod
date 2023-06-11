@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_oro_3690_settings_type">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>oro 3690 settings type</name>
+  <customvalues>
+    <customvalue scriptid="val_9286_1964123_458">
+      <isinactive>F</isinactive>
+      <value>Connection Type</value>
+    </customvalue>
+    <customvalue scriptid="val_9287_1964123_876">
+      <isinactive>F</isinactive>
+      <value>Parser Field</value>
+    </customvalue>
+    <customvalue scriptid="val_9200_1964121_364">
+      <isinactive>F</isinactive>
+      <value>Payment Process Status</value>
+    </customvalue>
+    <customvalue scriptid="val_9259_1964121_965">
+      <isinactive>F</isinactive>
+      <value>Credit/Debit</value>
+    </customvalue>
+  </customvalues>
+</customlist>

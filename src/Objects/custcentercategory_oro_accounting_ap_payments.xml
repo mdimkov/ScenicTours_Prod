@@ -1,0 +1,27 @@
+<centercategory scriptid="custcentercategory_oro_accounting_ap_payments">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_ap]</centertab>
+  <label>Deposits, Payments &amp; Prepayments</label>
+  <links>
+    <link>
+      <linkid>EDIT_TRAN_DEPOSIT</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_VENDPYMTAPPRV</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>EDIT_TRAN_VENDPYMT</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_TRAN_VENDPYMT</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

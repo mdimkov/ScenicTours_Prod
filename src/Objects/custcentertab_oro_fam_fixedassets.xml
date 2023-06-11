@@ -1,0 +1,10 @@
+<centertab scriptid="custcentertab_oro_fam_fixedassets">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>T</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <label>Fixed Assets</label>
+</centertab>

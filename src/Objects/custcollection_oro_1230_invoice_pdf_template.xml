@@ -1,0 +1,147 @@
+<translationcollection scriptid="custcollection_oro_1230_invoice_pdf_template">
+  <defaultlanguage>en</defaultlanguage>
+  <description>Invoice PDF Template</description>
+  <name>oro Invoice PDF Template </name>
+  <strings>
+    <string scriptid="account_no">
+      <defaulttranslation>Account No</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="amount">
+      <defaulttranslation>Amount</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="amount_due">
+      <defaulttranslation>Amount due</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="amount_invoiced">
+      <defaulttranslation>Total Amount Invoiced</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="bank_details">
+      <defaulttranslation>Bank Details</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="bank_name">
+      <defaulttranslation>Bank Name</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="benificiary">
+      <defaulttranslation>Beneficiary Name</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="customer">
+      <defaulttranslation>Customer No.</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="customer_vat">
+      <defaulttranslation>Customer VAT No</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="date">
+      <defaulttranslation>Date</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="date_due">
+      <defaulttranslation>Date Due</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="description">
+      <defaulttranslation>Description</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="exchange_rate">
+      <defaulttranslation>Exchange Rate</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="iban">
+      <defaulttranslation>IBAN</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="info_reminder">
+      <defaulttranslation>When paying by EFT, please email remittance to Krystle.Borg@scenic.eu</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="invoice_number">
+      <defaulttranslation>INVOICE NUMBER</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="number">
+      <defaulttranslation>Number</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="page">
+      <defaulttranslation>Page</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="ref">
+      <defaulttranslation>Reference - P.O. No</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="registration">
+      <defaulttranslation>Company Registration</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="subtotal">
+      <defaulttranslation>Subtotal before VAT</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="subtotal_gst">
+      <defaulttranslation>Subtotal before GST</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="subtotal_vat">
+      <defaulttranslation>Subtotal before VAT</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="swift">
+      <defaulttranslation>Swift</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="tax_rate">
+      <defaulttranslation>Tax Rate</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="tax_statement">
+      <defaulttranslation>Tax Statement</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="title">
+      <defaulttranslation>VAT Invoice</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="title_gst">
+      <defaulttranslation>Tax Invoice</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="title_vat">
+      <defaulttranslation>VAT Invoice</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="to">
+      <defaulttranslation>Invoice to</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="total_amount">
+      <defaulttranslation>Total amount</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="total_gst">
+      <defaulttranslation>Total GST</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="total_price">
+      <defaulttranslation>Total Price</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="total_vat">
+      <defaulttranslation>Total VAT</defaulttranslation>
+      <description></description>
+    </string>
+    <string scriptid="vat">
+      <defaulttranslation>VAT</defaulttranslation>
+      <description></description>
+    </string>
+  </strings>
+</translationcollection>

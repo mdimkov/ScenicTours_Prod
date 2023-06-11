@@ -1,0 +1,5 @@
+<centercategory scriptid="custcentercategory_oro_sales_sale_itm">
+  <center>[scriptid=custcenter_oro_sales]</center>
+  <centertab>[scriptid=custcentertab_oro_sales_sale]</centertab>
+  <label>Items &amp; Price Lists</label>
+</centercategory>

@@ -1,0 +1,22 @@
+<centercategory scriptid="custcentercategory_oro_procurement_cc_rma">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_cc]</centertab>
+  <label>Customer Returns</label>
+  <links>
+    <link>
+      <linkid>LIST_TRAN_RTNAUTH</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_NEG209</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_RTNAUTHRECEIVE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

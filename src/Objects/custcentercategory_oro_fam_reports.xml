@@ -1,0 +1,25 @@
+<centercategory scriptid="custcentercategory_oro_fam_reports">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_fam_fixedassets]</centertab>
+  <label>Reports</label>
+  <links>
+    <link>
+      <linklabel>Generate Report</linklabel>
+      <linkobject>[scriptid=customscript_fam_generatereport_su]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>My Reports</linklabel>
+      <linkobject>[scriptid=customscript_fam_reportshistory_su.customdeploy_fam_reportshistory_su]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Customize Report Template</linklabel>
+      <linkobject>[scriptid=customscript_fam_reporttemplate_su]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

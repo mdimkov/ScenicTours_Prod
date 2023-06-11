@@ -1,0 +1,22 @@
+<centercategory scriptid="custcentercategory_oro_warehousing_act_activities">
+  <center>[scriptid=custcenter_oro_warehousing]</center>
+  <centertab>[scriptid=custcentertab_oro_warehousing_act]</centertab>
+  <label>Activities</label>
+  <links>
+    <link>
+      <linkid>LIST_EVENT</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_CALL</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_ACTIVITY</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_warehousing_in_purchase">
+  <center>[scriptid=custcenter_oro_warehousing]</center>
+  <centertab>[scriptid=custcentertab_oro_warehousing_in]</centertab>
+  <label>Purchasing</label>
+  <links>
+    <link>
+      <linkid>LIST_TRAN_PURCHORD</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_277</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

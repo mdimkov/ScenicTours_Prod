@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_procurement_purchase_vendors">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_purchase]</centertab>
+  <label>Vendor Master</label>
+  <links>
+    <link>
+      <linkid>LIST_VENDOR</linkid>
+      <linklabel>Lieferanten</linklabel>
+      <shortlist>T</shortlist>
+    </link>
+  </links>
+</centercategory>

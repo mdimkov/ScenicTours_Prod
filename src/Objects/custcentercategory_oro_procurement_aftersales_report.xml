@@ -1,0 +1,22 @@
+<centercategory scriptid="custcentercategory_oro_procurement_aftersales_report">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_aftersales]</centertab>
+  <label>Reports</label>
+  <links>
+    <link>
+      <linkid>REPO_283</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_REGISTER_ACCTPAY</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_277</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

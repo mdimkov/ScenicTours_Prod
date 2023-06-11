@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_sales_crm_campaign">
+  <center>[scriptid=custcenter_oro_sales]</center>
+  <centertab>[scriptid=custcentertab_oro_sales_crm]</centertab>
+  <label>Marketing Campaigns</label>
+  <links>
+    <link>
+      <linkid>LIST_CUSTJOB</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

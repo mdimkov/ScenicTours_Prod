@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_oro_3690_sl_cfg_interface">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>_ORO_3690|SL|Configuration Interface</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 407612/_oro_3690_bank_reconciliation/Scripts/Server/SuiteLet/_oro_3690_sl_cfg_interface.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_oro_3690_sl_cfg_interface">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>_ORO_3690|SL|Configuration Interface</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

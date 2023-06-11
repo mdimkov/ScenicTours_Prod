@@ -1,0 +1,47 @@
+<centercategory scriptid="custcentercategory_oro_sales_sale_orders">
+  <center>[scriptid=custcenter_oro_sales]</center>
+  <centertab>[scriptid=custcentertab_oro_sales_sale]</centertab>
+  <label>Kundenaufträge</label>
+  <links>
+    <link>
+      <linkid>EDIT_TRAN_SALESORD</linkid>
+      <linklabel>Kundenauftrag erfassen ➕</linklabel>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_REALLOCITEMS</linkid>
+      <linklabel>einen Artikel anderen Aufträgen zuordnen ♻️</linklabel>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_179</linkid>
+      <linklabel>Liste an Kundenaufträgen 🧾</linklabel>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linkid>TRAN_SALESORDAPPRV</linkid>
+      <linklabel>Kundenaufträge genehmigen 👍</linklabel>
+      <shortlist>T</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_180</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_38</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_34</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_148</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

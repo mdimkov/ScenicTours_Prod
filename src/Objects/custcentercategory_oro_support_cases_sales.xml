@@ -1,0 +1,22 @@
+<centercategory scriptid="custcentercategory_oro_support_cases_sales">
+  <center>[scriptid=custcenter_oro_support]</center>
+  <centertab>[scriptid=custcentertab_oro_support_cases]</centertab>
+  <label>Sales Order</label>
+  <links>
+    <link>
+      <linkid>LIST_TRAN_SALESORD</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_TRAN_CASHSALE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_180</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

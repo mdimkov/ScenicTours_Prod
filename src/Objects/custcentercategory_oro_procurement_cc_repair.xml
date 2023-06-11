@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_procurement_cc_repair">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_cc]</centertab>
+  <label>Customer Repairs</label>
+  <links>
+    <link>
+      <linkid>TRAN_RTNAUTHRECEIVE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

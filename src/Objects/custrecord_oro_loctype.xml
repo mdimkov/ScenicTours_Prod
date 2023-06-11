@@ -1,0 +1,41 @@
+<othercustomfield scriptid="custrecord_oro_loctype">
+  <accesslevel>2</accesslevel>
+  <applyformatting>F</applyformatting>
+  <checkspelling>F</checkspelling>
+  <defaultchecked>F</defaultchecked>
+  <defaultselection></defaultselection>
+  <defaultvalue></defaultvalue>
+  <description>Created 06/2021 by MDIMKOV&#xd;
+indicates if the respective location is a Ship Location or not; when ticked, the location represents a ship&#xd;
+for more information please contact&#xd;
+milcho.dimkov@inplenion.com</description>
+  <displayheight></displayheight>
+  <displaytype>NORMAL</displaytype>
+  <displaywidth></displaywidth>
+  <dynamicdefault></dynamicdefault>
+  <encryptatrest>F</encryptatrest>
+  <fieldtype>SELECT</fieldtype>
+  <help>Created 06/2021 by MDIMKOV&#xd;
+indicates if the respective location is a Ship Location or not; when ticked, the location represents a ship&#xd;
+for more information please contact&#xd;
+milcho.dimkov@inplenion.com</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>Location Type</label>
+  <linktext></linktext>
+  <maxlength></maxlength>
+  <maxvalue></maxvalue>
+  <minvalue></minvalue>
+  <onparentdelete>NO_ACTION</onparentdelete>
+  <rectype>-103</rectype>
+  <searchcomparefield></searchcomparefield>
+  <searchdefault></searchdefault>
+  <searchlevel>2</searchlevel>
+  <selectrecordtype>[scriptid=customrecord_oro_shiplocation]</selectrecordtype>
+  <showhierarchy>F</showhierarchy>
+  <showinlist>T</showinlist>
+  <sourcefilterby></sourcefilterby>
+  <sourcefrom></sourcefrom>
+  <sourcelist></sourcelist>
+  <storevalue>T</storevalue>
+</othercustomfield>

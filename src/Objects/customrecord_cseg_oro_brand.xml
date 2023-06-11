@@ -1,0 +1,113 @@
+<customrecordtype scriptid="customrecord_cseg_oro_brand">
+  <allowattachments>F</allowattachments>
+  <allowinlinedeleting>F</allowinlinedeleting>
+  <allowinlinedetaching>F</allowinlinedetaching>
+  <allowinlineediting>F</allowinlineediting>
+  <allowquickadd>F</allowquickadd>
+  <allowquicksearch>F</allowquicksearch>
+  <customsegment>[type=customsegment, scriptid=cseg_oro_brand]</customsegment>
+  <enabledle>F</enabledle>
+  <enablekeywords>F</enablekeywords>
+  <enablemailmerge>F</enablemailmerge>
+  <enableoptimisticlocking>F</enableoptimisticlocking>
+  <enablesystemnotes>T</enablesystemnotes>
+  <icon></icon>
+  <iconbuiltin>T</iconbuiltin>
+  <iconindex></iconindex>
+  <includeinsearchmenu>T</includeinsearchmenu>
+  <showcreationdate>F</showcreationdate>
+  <showcreationdateonlist>F</showcreationdateonlist>
+  <showlastmodified>F</showlastmodified>
+  <showlastmodifiedonlist>F</showlastmodifiedonlist>
+  <shownotes>T</shownotes>
+  <showowner>F</showowner>
+  <showownerallowchange>F</showownerallowchange>
+  <showowneronlist>F</showowneronlist>
+  <instances>
+    <instance scriptid="val_6185_6796187_sb1_798">
+      <cseg_oro_brand></cseg_oro_brand>
+      <isinactive>F</isinactive>
+      <name>Scenic</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_6186_6796187_sb1_931">
+      <cseg_oro_brand></cseg_oro_brand>
+      <isinactive>F</isinactive>
+      <name>Scenic Luxury Cruises &amp; Tours</name>
+      <parent>[scriptid=customrecord_cseg_oro_brand.val_6185_6796187_sb1_798]</parent>
+    </instance>
+    <instance scriptid="val_6187_6796187_sb1_855">
+      <cseg_oro_brand></cseg_oro_brand>
+      <isinactive>F</isinactive>
+      <name>Scenic Eclipse</name>
+      <parent>[scriptid=customrecord_cseg_oro_brand.val_6185_6796187_sb1_798]</parent>
+    </instance>
+    <instance scriptid="val_6188_6796187_sb1_658">
+      <cseg_oro_brand></cseg_oro_brand>
+      <isinactive>F</isinactive>
+      <name>Emerald</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_6189_6796187_sb1_438">
+      <cseg_oro_brand></cseg_oro_brand>
+      <isinactive>F</isinactive>
+      <name>Emerald Waterways</name>
+      <parent>[scriptid=customrecord_cseg_oro_brand.val_6188_6796187_sb1_658]</parent>
+    </instance>
+    <instance scriptid="val_6190_6796187_sb1_429">
+      <cseg_oro_brand></cseg_oro_brand>
+      <isinactive>F</isinactive>
+      <name>Evergreen</name>
+      <parent>[scriptid=customrecord_cseg_oro_brand.val_6188_6796187_sb1_658]</parent>
+    </instance>
+    <instance scriptid="val_6191_6796187_sb1_411">
+      <cseg_oro_brand></cseg_oro_brand>
+      <isinactive>F</isinactive>
+      <name>Mayflower</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_374084_6796187_sb1_999">
+      <cseg_oro_brand></cseg_oro_brand>
+      <isinactive>F</isinactive>
+      <name>ST</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_374086_6796187_sb1_982">
+      <cseg_oro_brand></cseg_oro_brand>
+      <isinactive>F</isinactive>
+      <name>ET</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_374088_6796187_sb1_813">
+      <cseg_oro_brand></cseg_oro_brand>
+      <isinactive>F</isinactive>
+      <name>OD</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_374574_6796187_sb1_555">
+      <cseg_oro_brand></cseg_oro_brand>
+      <isinactive>F</isinactive>
+      <name>Evergreen Cruises &amp; Tours</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_375754_6796187_sb1_465">
+      <cseg_oro_brand></cseg_oro_brand>
+      <isinactive>F</isinactive>
+      <name>Outback Discovery</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_375827_6796187_sb1_270">
+      <cseg_oro_brand></cseg_oro_brand>
+      <isinactive>F</isinactive>
+      <name>Connoisseurs Choice by Scenic</name>
+      <parent></parent>
+    </instance>
+  </instances>
+  <links>
+    <link>
+      <linkcategory>BASICSETUPCOMPANY</linkcategory>
+      <linklabel></linklabel>
+      <linktasktype>LIST</linktasktype>
+    </link>
+  </links>
+</customrecordtype>

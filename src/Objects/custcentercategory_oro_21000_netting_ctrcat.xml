@@ -1,0 +1,19 @@
+<centercategory scriptid="custcentercategory_oro_21000_netting_ctrcat">
+  <center>BASIC</center>
+  <centertab>BASICCENTERREPORTS</centertab>
+  <label>Netting</label>
+  <links>
+    <link>
+      <linklabel>Scenic Balance Overview</linklabel>
+      <linkobject>[scriptid=custlink_2_6796187_181]</linkobject>
+      <linktasktype>LINK</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Scenic Intercompany Balance Overview</linklabel>
+      <linkobject>[scriptid=custlink_3_6796187_555]</linkobject>
+      <linktasktype>LINK</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

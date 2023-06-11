@@ -1,0 +1,22 @@
+<centercategory scriptid="custcentercategory_oro_accounting_inv_itm">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_inv]</centertab>
+  <label>Item Master Data</label>
+  <links>
+    <link>
+      <linkid>LIST_ITEM</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>ADMI_HIERARCHYMANAGER</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_MERCHANDISEHIERARCHYVERSION</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

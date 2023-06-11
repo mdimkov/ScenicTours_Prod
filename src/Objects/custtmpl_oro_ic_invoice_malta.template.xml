@@ -1,0 +1,358 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+    <#if record.custbody_oro_1230_locale?has_content>
+        <#setting locale = record.custbody_oro_1230_locale>
+    <#else>
+        <#setting locale = "en">
+    </#if>
+
+    <#list subsidiary.taxregistration as taxreg>
+        <#if taxreg.nexus == record.nexus>
+            <#if taxreg.taxregistrationnumber?has_content>
+                <#assign tax_no = taxreg.taxregistrationnumber>
+            <#else>
+                <#assign tax_no = "Is Not Set (in NetSuite)">
+            </#if>
+        </#if>
+    </#list>
+
+    <#if record.custbody_oro_1230_sourced_print_data?has_content>
+        <#assign dataJson = record.custbody_oro_1230_sourced_print_data?eval>
+        <#assign taxStatement = dataJson.tax_statement>
+        <#assign taxType = dataJson.tax_type>
+    <#else>
+
+    </#if>
+
+    <#function getTranslation key>
+        <#assign translation = nstranslation.get({"collection":"custcollection_oro_1230_invoice_pdf_template", "key": key})>
+        <#return translation>
+    </#function>
+
+    <#assign subsidiaryTax = record.subsidiarytaxregnum?split(" ")>
+    <#if record.custbody_oro_3010_payment_account?has_content>
+        <#assign acctNum = record.custbody_oro_3010_payment_account?split(" ")>
+        <#assign paymentNumber = acctNum[0]>
+        <#assign jsonContent = companyInformation.custrecord_oro_3010_cache_acc?eval>
+        <#assign bankName = jsonContent[paymentNumber].sbankname>
+        <#assign iban = jsonContent[paymentNumber].ibanAcctNum>
+        <#assign bic = jsonContent[paymentNumber].custrecord_oro_3010_bic>
+    <#else>
+        <#assign bankName = "Credit Suisse(Switzerland) Limited">
+        <#assign iban = "CH7804835161028982000">
+        <#assign bic = "CRESCHZZ80A">
+    </#if>
+    <head>
+        <style type="text/css">
+            * {
+                font-family: Arial, Helvetica, Tahoma, sans-serif;
+            }
+
+            td {
+                padding: 4px 6px;
+            }
+            td p { align:left }
+            b {
+                font-weight: bold;
+                color: #333333;
+            }
+            table.header td {
+                padding: 0px;
+                font-size: 8pt;
+            }
+            table.footer td {
+                padding: 0px;
+                font-size: 8pt;
+            }
+            table.itemtable th {
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            table.body td {
+                padding-top: 2px;
+            }
+            table.total {
+                page-break-inside: avoid;
+            }
+            tr.totalrow {
+                background-color: #e3e3e3;
+                line-height: 200%;
+            }
+            td.totalboxtop {
+                font-size: 12pt;
+                background-color: #e3e3e3;
+            }
+            td.addressheader {
+                font-size: 8pt;
+                padding-top: 6px;
+                padding-bottom: 2px;
+            }
+            td.address {
+                padding-top: 0px;
+            }
+            td.totalboxmid {
+                font-size: 28pt;
+                padding-top: 20px;
+                background-color: #e3e3e3;
+            }
+            td.totalboxbot {
+                background-color: #e3e3e3;
+                font-weight: bold;
+            }
+            span.title {
+                font-size: 28pt;
+            }
+            span.number {
+                font-size: 16pt;
+            }
+            span.itemname {
+                font-weight: bold;
+                line-height: 150%;
+            }
+            hr {
+                width: 100%;
+                color: #d3d3d3;
+                background-color: #d3d3d3;
+                height: 1px;
+            }
+
+
+            td.border1 {
+                font-weight: bold;
+                font-size: 9pt;
+                border-top: 1px solid;
+                border-left: 1px solid;
+                border-bottom: 1px solid;
+                padding: 3px 3px 0px 3px;
+            }
+
+
+            td.border2{
+                font-size: 9pt;
+                border-bottom: 1px solid;
+                border-left: 1px solid;
+                padding: 3px 3px 5px 3px;
+            }
+
+            td.borderTotal1{
+                border-top: 1px solid;
+                border-left: 1px solid;
+                border-bottom: 1px solid;
+            }
+
+            td.borderTotal2{
+                border-left: 1px solid;
+                border-bottom: 1px solid;
+            }
+        </style>
+
+        <macrolist>
+            <macro id="nlheader">
+                <table class="header" style="width: 100%;">
+                    <tr>
+                        <td style="width:45%;font-size:12pt;">
+                            <b>${record.subsidiary.legalname}<br/> </b>
+                            <b>Tax Reg. No.: ${tax_no}</b><br/>
+                            <p style="font-size: 10pt;">${subsidiary.mainaddress_text}</p>
+                        </td>
+                        <td style="width:25%;">
+                            <table style="margin-top:3px; font-size:10pt;">
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width:30%;">
+                            <table style="width:100%;">
+                                <tr>
+                                    <td style="width:20%; border-top: 1px solid; border-left: 1px solid; padding:3px 0px 0px 3px;"><b>${getTranslation("NUMBER")}:</b></td>
+                                    <td style="width:20%; border-top: 1px solid; border-right: 1px solid; padding:3px 3px 0px 0px;" align="right">${record.tranid}</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-left: 1px solid; padding:3px 0px 0px 3px;"><b>${getTranslation("PAGE")}:</b></td>
+                                    <td style="border-right: 1px solid; padding:3px 3px 0px 0px;" align="right"><p style="text-align: right;"><pagenumber/></p></td>
+                                </tr>
+                                <tr>
+                                    <td style="border-bottom: 1px solid; border-left: 1px solid; padding:3px 0px 0px 3px;"><b>${getTranslation("DATE")}:</b></td>
+                                    <td style="border-bottom: 1px solid; border-right: 1px solid; padding:3px 3px 0px 0px;" align="right">${record.trandate?string("dd-MMMM-yyyy")}</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </macro>
+        </macrolist>
+
+    </head>
+    <body header="nlheader" header-height="10%" footer-height="20pt" padding="1.5cm 1cm 1.5cm 1.5cm" size="A4">
+    <table style="width: 100%; margin-top: 10px;">
+        <tr>
+            <td style="width:9%"></td>
+            <td style="width:38%; padding:0px;">
+                <table style="width:100%;">
+                    <tr>
+                        <td style="border-bottom: 1px solid; border-left: 1px solid; border-top: 1px solid; border-right: 1px solid; height: 88px; font-size: 8pt; padding-top:5px;">
+                            ${record.billaddress}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="width:21%"></td>
+            <td style="width:32%; padding:0px;">
+                <table style="width:100%;">
+                    <tr>
+                        <td align="center" style="border-bottom: 1px solid; border-left: 1px solid; border-top: 1px solid; border-right: 1px solid; height: 40px; font-size: 8pt; font-size: 16pt; background-color:#C0C0C0">
+                            <b><#if taxType?has_content>${getTranslation("TITLE_${taxType}")}<#else>${getTranslation("TITLE")}</#if></b>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table style="width: 100%; margin-top: 5px;">
+        <tr>
+            <td class="border1" style="width:21%;">${getTranslation("REF")}</td>
+            <td class="border1" style="width:15%;">${getTranslation("CUSTOMER")}</td>
+            <td class="border1" style="width:40%;">${getTranslation("CUSTOMER_VAT")}</td>
+            <td class="border1" style="border-right: 1px solid;" align="center">${getTranslation("DATE_DUE")}</td>
+        </tr>
+        <tr>
+            <td class="border2" style="width:21%;"></td>
+            <td class="border2" style="width:15%;">${record.entity.entityid}</td>
+            <td class="border2" style="width:40%;">${record.entitytaxregnum}</td>
+            <td class="border2" style="border-right: 1px solid;" align="center"><#if record.duedate?has_content>${record.duedate?string("dd-MMMM-yyyy")}</#if></td>
+
+        </tr>
+    </table>
+    <table style="width:100%; margin-top: 5px; padding:0px; line-height: 0.5cm;">
+        <tr>
+            <td class="border1" style="width:72%;">${getTranslation("DESCRIPTION")}</td>
+            <td class="border1" style="width:10%;">${getTranslation("TAX_RATE")}</td>
+            <td class="border1" style="width:18%; border-right: 1px solid;" align="right">${getTranslation("AMOUNT")}</td>
+        </tr>
+
+        <#list record.item as item>
+            <tr>
+                <#--                Item Desctiption-->
+                <td class="border2" style="font-size: 8pt;"><#if item.description?has_content>${item.description}<#else>${item.item}</#if></td>
+                <#--                Tax Rate-->
+                <td class="border2" style="font-size: 8pt;" align="right">${item.taxrate}</td>
+                <#--                Amount-->
+                <td class="border2" style="border-right: 1px solid; font-size: 8pt;" align="right">${item.amount?string["#,##0.00"]}</td>
+            </tr>
+        </#list>
+        <tr>
+            <td class="border2" style="font-size: 8pt">
+                <span style="font-style: italic; text-decoration: underline;">${getTranslation("TAX_STATEMENT")}</span><br/>
+                <#if taxStatement?has_content>-->
+                    <#if taxStatement?is_hash_ex>
+                        <#list taxStatement as key,value>
+                            ${value["statements"]}<br/>
+                        </#list>
+                    <#else>
+                        ${dataJson.tax_statement}
+                    </#if>
+                <#else>
+                    n/a
+                </#if>
+            </td>
+            <td style="font-size: 8pt; border-left: 1px solid"></td>
+        </tr>
+
+        <#--        <tr>-->
+        <#--            <td class="border2" style="height:500px; font-size: 8pt;">-->
+        <#--                <#list record.item as item>-->
+        <#--                    <#if item.description?has_content>${item.description}<#else>${item.item}</#if><br/>-->
+        <#--                </#list>-->
+        <#--                <br/>-->
+        <#--                <span style="font-style: italic; text-decoration: underline;">${getTranslation("TAX_STATEMENT")}</span><br/>-->
+        <#--                <#if taxStatement?has_content>-->
+        <#--                    <#if taxStatement?is_hash_ex>-->
+        <#--                        <#list taxStatement as key,value>-->
+        <#--                            ${value["statements"]}<br/>-->
+        <#--                        </#list>-->
+        <#--                    <#else>-->
+        <#--                        ${dataJson.tax_statement}-->
+        <#--                    </#if>-->
+        <#--                <#else>-->
+        <#--                    n/a-->
+        <#--                </#if>-->
+        <#--            </td>-->
+
+        <#--            <td class="border2" style="font-size: 8pt;" align="right">-->
+        <#--                <#list record.item as item>-->
+        <#--                    ${item.taxrate}<br/>-->
+        <#--                </#list>-->
+        <#--            </td>-->
+
+
+        <#--            <td class="border2" style="border-right: 1px solid; font-size: 8pt;" align="right">-->
+        <#--                <#list record.item as item>-->
+        <#--                    ${item.amount?string["#,##0.00"]}<br/>-->
+        <#--                </#list>-->
+        <#--            </td>-->
+        <#--        </tr>-->
+
+    </table>
+          
+          <!-- MDIMKOV 28.03.2023: add static text for French subsidiaries-->
+          <#if record.subsidiary.id == '19' || record.subsidiary.id == '21' || record.subsidiary.id == '25' || record.subsidiary.id == '35' || record.subsidiary.id == '52'>
+            <br/>
+            <table style="width:100%; font-size: 9pt;" cellpadding="0" cellspacing="0">
+              <tr>
+                  <td>
+                    <i>Pas d’escompte de règlement anticipé<br/>
+                    Art L441-6 du Code de Commerce: tout retard de paiement donnera lieu à l'application d'une pénalité égale à trois fois le taux d'intérêt légal de l'année en cours et à une indemnité forfaitaire pour frais de recouvrement de 40 euros.
+                    </i>
+                  </td>
+              </tr>
+            </table>
+            <br/>
+          </#if>
+          
+    <table style="width:100%;" cellpadding="0" cellspacing="0">
+        <tr>
+            <td style="width:60%">
+                <!--BANK INFO-->
+                    <table style="width:100%; font-size: 9pt;">
+                        <tr>
+                            <td>
+                                <#if record.custbody_sce_bd_bankname?has_content>${record.custbody_sce_bd_bankname}<br/></#if>
+                                <#if record.custbody_sce_bd_bankaddr?has_content>${record.custbody_sce_bd_bankaddr}<br/></#if>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>
+                              <#if record.custbody_sce_bd_bic?has_content><b>BIC (Swift Code): </b> ${record.custbody_sce_bd_bic}<br/></#if>
+                              <#if record.custbody_sce_bd_iban?has_content><b>IBAN: </b>${record.custbody_sce_bd_iban}<br/></#if>
+                              <#if record.custbody_sce_bd_sortcode?has_content><b>Sort Code: </b>${record.custbody_sce_bd_sortcode}<br/></#if>
+                              <#if record.custbody_sce_bd_bsb?has_content><b>BSB: </b>${record.custbody_sce_bd_bsb}</#if>
+                            </td>
+                        </tr>
+                    </table>
+            </td>
+            <td style="width:40%">
+                <table style="width:100%; font-size: 8pt; margin-top: 10px;">
+                    <tr>
+                        <td class="borderTotal1" style="width:55%;"><p align="right">
+                                <b><#if taxType?has_content>${getTranslation("SUBTOTAL_${taxType}")}<#else>${getTranslation("SUBTOTAL_VAT")}</#if><br/>
+                                    <#if taxType?has_content>${getTranslation("TOTAL_${taxType}")}<#else>${getTranslation("TOTAL_VAT")}</#if><br/>
+                                    ${getTranslation("AMOUNT_DUE")}</b></p>
+                        </td>
+                        <td class="borderTotal1" style="width:45%; border-right: 1px solid;"> <p align="right">${record.subtotal?string["#,##0.00"]}<br/> ${record.taxtotal?string["#,##0.00"]}<br/>  ${record.total?string["#,##0.00"]}</p></td>
+                    </tr>
+                    <tr>
+                        <td class="borderTotal2" align="right"><b>${getTranslation("TOTAL_AMOUNT")} ${record.currency}</b></td>
+                        <td class="borderTotal2" style="border-right: 1px solid; background-color:#C0C0C0; font-size: 9pt;" align="right"><b>${record.amountremaining}</b></td>
+                    </tr>
+                    <tr>
+                        <td class="borderTotal2" align="right">${getTranslation("EXCHANGE_RATE")}</td>
+                        <td class="borderTotal2" align="right" style="border-right: 1px solid;">${record.custbody_oro_1990_ste_fxrate_trandate}</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <p style="font-style: italic; color: blue; margin-left: 5px; margin-top: 20px; font-size: 10pt; "><!--${getTranslation("INFO_REMINDER")}--></p>
+    </body>
+</pdf>

@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_warehousing_inv_loc">
+  <center>[scriptid=custcenter_oro_warehousing]</center>
+  <centertab>[scriptid=custcentertab_oro_warehousing_inv]</centertab>
+  <label>Lager &amp; Bestand</label>
+  <links>
+    <link>
+      <linkid>LIST_LOCATION</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_NEG298</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

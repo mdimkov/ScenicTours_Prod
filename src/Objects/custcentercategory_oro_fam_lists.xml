@@ -1,0 +1,19 @@
+<centercategory scriptid="custcentercategory_oro_fam_lists">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_fam_fixedassets]</centertab>
+  <label>Lists</label>
+  <links>
+    <link>
+      <linklabel>Assets</linklabel>
+      <linkobject>[scriptid=customrecord_ncfar_asset]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Build Compound Asset</linklabel>
+      <linkobject>[scriptid=customscript_fam_compound_asset_su]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

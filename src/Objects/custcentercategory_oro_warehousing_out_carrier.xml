@@ -1,0 +1,5 @@
+<centercategory scriptid="custcentercategory_oro_warehousing_out_carrier">
+  <center>[scriptid=custcenter_oro_warehousing]</center>
+  <centertab>[scriptid=custcentertab_oro_warehousing_out]</centertab>
+  <label>Shipping Configuration</label>
+</centercategory>

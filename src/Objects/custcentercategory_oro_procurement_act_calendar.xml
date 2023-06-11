@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_procurement_act_calendar">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_act]</centertab>
+  <label>Calendar</label>
+  <links>
+    <link>
+      <linkid>LIST_CALENDAR</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

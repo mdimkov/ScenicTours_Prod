@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_accounting_cash_trn">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_cash]</centertab>
+  <label>Bank Transfers</label>
+  <links>
+    <link>
+      <linkid>LIST_TRAN_TRANSFER</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

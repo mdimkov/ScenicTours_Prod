@@ -1,0 +1,505 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+
+<pdfset>
+	<pdf>
+      	<head>
+         	<link name="ocrb" type="font" subtype="opentype" src="https://1964123.app.netsuite.com/core/media/media.nl?id=18&amp;c=1964123&amp;h=b5b0c9977da4512b5db6&amp;_xt=.ttf" bytes="2" /> <!-- NEED TO CHANGE SRC PATH, DEPENDING ON EACH ACCOUNT ENVIRONMENT -->
+          	<link name="NotoSans" type="font" subtype="truetype" src="${nsfont.NotoSans_Regular}" src-bold="${nsfont.NotoSans_Bold}" src-italic="${nsfont.NotoSans_Italic}" src-bolditalic="${nsfont.NotoSans_BoldItalic}" bytes="2" />
+          
+          	<style type="text/css">
+              body {
+                	margin: 0cm;
+                	line-height: 100%;
+                	padding: 0;
+                	font-family: NotoSans;
+                	font-size: 10px;
+              }
+              table tr td {
+                	/*border: 1px solid black;*/
+              }
+              #black_label {
+                	font-size: 8px;
+                	font-weight: 400;
+                	vertical-align: middle;
+              }
+              #orange_background {
+                	background-color: #ffd1b3;
+                	vertical-align: bottom;
+                    width: 21cm;
+                    max-width: 21cm;
+              }
+              #orange_label {
+                	color: #ff6600;
+                	font-size: 6.5px;
+                	vertical-align: middle;
+              }
+              #orange_border {
+                	border: 1px solid #ff6600;
+                    font-family:ocrb;
+              }
+              #white_background {
+                	vertical-align: bottom;
+                    width: 21cm;
+                    max-width: 21cm;
+              }
+              #white_label {
+                    color: #ffffff;
+                	font-size: 6.5px;
+                	vertical-align: middle;
+              }
+              #white_border {
+                	border: 1px solid #ffffff;
+                    font-family:ocrb;
+              }
+          	</style>
+      	</head>
+      	<body margin="0cm" size="A4">
+          	<#assign rawTotal = record.total?string["0.##"]>
+           	<#assign amount = rawTotal?keep_before(".")>
+           	<#assign rawRappen = rawTotal?keep_after(".")>
+              
+            <#if .locale=="de_DE">
+              	<#assign amount = rawTotal?keep_before(",")>
+           		<#assign rawRappen = rawTotal?keep_after(",")>
+            </#if>
+                  
+          	<#assign rappen = "00">
+          	<#if rawRappen?length &gt; 1>
+              	<#assign rappen = rawRappen>
+           	<#elseif rawRappen?length &gt; 0>
+              	<#assign rappen = rawRappen + "0">
+            </#if>
+            
+
+            <#if record.custbody_oro_3010_esr_preprint> <!--ESR USING ORANGE BACKGROUND-->
+                <table id="orange_background" style="height:.5cm; border-bottom:1px solid black;">
+                    <tr>
+                        <td id="black_label" style="width:6cm; max-width:6cm; border-right:1px solid black; padding-left:5px;">
+                            Empfangsschein / Récépissé / Ricevuta
+                        </td>
+                        <td id="black_label" style="width:5.5cm; max-width:5.5cm; padding-left:5px;">
+                            Einzahlung Giro
+                        </td>
+                        <td id="black_label" style="width:6cm; max-width:6cm;">
+                            Versement Virement
+                        </td>
+                        <td id="black_label" style="width:3.5cm; max-width:3.5cm;">
+                            Versamento Girata
+                        </td>
+                    </tr>
+                </table>
+                <table id="orange_background" style="height:10.5cm;" cellpadding="0">
+                    <tr>
+                        <td style="width:6cm; max-width:6cm;" rowspan="2">
+                            <table style="width:100%; max-width:100%; height:100%;">
+                                <tr style="width:100%; max-width:100%; height:.5cm;">
+                                    <td id="orange_label" colspan="3">
+                                        Einzahlung für / Versement pour / Versamento per
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:1cm">
+                                    <td colspan="3">
+                                        ${record.custbody_oro_payment_account.custrecord_oro_3010_bank_address}
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:.5cm;">
+                                    <td id="orange_label" colspan="3">
+                                        Zugunsten von / En vaveur de / A favore di
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:1.8cm">
+                                    <td colspan="3">
+                                        <#if record.subsidiary=="Parent Company" || record.subsidiary=="Mutterunternehmen"  || record.subsidiary=="Société mère">
+                                            ${companyInformation.addressText}
+                                        <#else>
+                                            ${subsidiary.mainaddress_text}
+                                        </#if>
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:.5cm;">
+                                    <td colspan="3" cellspacing="0" cellpadding="0">
+                                        <table style="width:100%; max-width:100%; border:none;" cellspacing="0" cellpadding="0">
+                                            <tr style="border:none;">
+                                                <td id="orange_label" style="width:3cm; max-width:3cm; border:none;">
+                                                    Konto / Compte / Conto
+                                                </td>
+                                                <td style="width:3cm; max-width:3cm; font-family:ocrb; valign:middle; border:none;">
+                                                    ${record.custbody_oro_payment_account.custrecord_oro_3010_bank_no}
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:.5cm">
+                                    <td colspan="3">
+                                        ${record.currency}
+                                    </td>
+                                </tr>
+                                <tr style="height:.5cm;">
+                                    <td id="orange_border" style="width:4cm; max-width:4cm; height:100%; margin-left:5px; align:right; valign:middle;">
+                                        ${amount}
+                                    </td>
+                                    <td style="width:.5cm; max-width:.5cm; height:100%; valign:bottom; align:center;" cellspacing="0">
+                                        .
+                                    </td>
+                                    <td id="orange_border" style="width:1cm; max-width:1cm; height:100%; margin-right:5px; valign:middle;">
+                                        ${rappen}
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:.5cm;">
+                                    <td id="orange_label" colspan="3">
+                                        Einbezahlt von / Versé par / Versato da
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:.5cm">
+                                    <td style="font-family:ocrb;" colspan="3">
+                                        ${record.custbody_oro_3010_esr_no}
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:1.5cm">
+                                    <td colspan="3">
+                                        ${record.billaddress}
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:2.7cm;">
+                                    <td style="valign:middle;" colspan="3" cellspacing="0" cellpadding="0">
+                                        <table style="width:100%; max-width:100%; height:100%; border:none;" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td style="width:50%; max-width:50%;">
+                                                </td>
+                                                <td style="width:50%; max-width:50%; font-size:6px; valign:middle;">
+                                                    Die Annahmestelle<br/>
+                                                    L'office de dépôt<br/>
+                                                    L'ufficio d'accettazione
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width:6.1cm; max-width:6.1cm;">
+                            <table style="width:100%; max-width:100%; height:100%; border-right:1px solid black;">
+                                <tr style="height:.5cm;">
+                                    <td id="orange_label" colspan="3">
+                                        Einzahlung für / Versement pour / Versamento per
+                                    </td>
+                                </tr>
+                                <tr style="height:1cm">
+                                    <td colspan="3">
+                                        ${record.custbody_oro_payment_account.custrecord_oro_3010_bank_address}
+                                    </td>
+                                </tr>
+                                <tr style="height:.5cm;">
+                                    <td id="orange_label" colspan="3">
+                                        Zugunsten von / En vaveur de / A favore di
+                                    </td>
+                                </tr>
+                                <tr style="height:1.8cm">
+                                    <td colspan="3">
+                                        <#if record.subsidiary=="Parent Company" || record.subsidiary=="Mutterunternehmen"  || record.subsidiary=="Société mère">
+                                            ${companyInformation.addressText}
+                                        <#else>
+                                            ${subsidiary.mainaddress_text}
+                                        </#if>
+                                    </td>
+                                </tr>
+                                <tr style="height:.5cm;">
+                                    <td colspan="3" cellspacing="0" cellpadding="0">
+                                        <table style="width:100%; max-width:100%; border:none;" cellspacing="0" cellpadding="0">
+                                            <tr style="border:none;">
+                                                <td id="orange_label" style="width:3cm; max-width:3cm; border:none;">
+                                                    Konto / Compte / Conto
+                                                </td>
+                                                <td style="width:3cm; max-width:3cm; font-family:ocrb; valign:middle; border:none;">
+                                                    ${record.custbody_oro_payment_account.custrecord_oro_3010_bank_no}
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="height:.5cm">
+                                    <td colspan="3">
+                                        ${record.currency}
+                                    </td>
+                                </tr>
+                                <tr style="height:.5cm;">
+                                    <td id="orange_border" style="width:4cm; max-width:4cm; height:100%; margin-left:5px; align:right; valign:middle;">
+                                        ${amount}
+                                    </td>
+                                    <td style="width:.5cm; max-width:.5cm; height:100%; valign:bottom; align:center;" cellspacing="0">
+                                        .
+                                    </td>
+                                    <td id="orange_border" style="width:1cm; max-width:1cm; height:100%; margin-right:5px; valign:middle;">
+                                        ${rappen}
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:2.5cm;">
+                                    <td style="font-family:ocrb; padding-left:25px; padding-top:60px;" colspan="3">
+                                        000
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width:8.9cm; max-width:8.9cm; height:7.8cm;">
+                            <table style="width:100%; max-width:100%; height:2.5cm; border-bottom:1px solid black;">
+                                <tr>
+                                    <td id="orange_label" style="width:5.6cm; max-width:5.6cm; border-right:1px solid black;">
+                                        Keine Mittelungen anbringen<br/>
+                                        pas de communications<br/>
+                                        Non aggiungete comunicazioni
+                                    </td>
+                                    <td style="width:3.3cm; max-width:3.3cm;">
+                                    </td>
+                                </tr>  
+                            </table>
+                            <table style="width:100%; max-width:100%; height:5.3cm;">
+                                <tr style="height:.5cm;">
+                                    <td id="orange_label" style="align:center;">
+                                        Referenz-Nr./N⁰ de reférence/N⁰ di riferimento
+                                    </td>
+                                </tr>
+                                <tr style="height:.5cm;">
+                                    <td id="orange_border" style="width:100%; max-width:100%; height:100%; margin-left:5px; margin-right: 5px; align:center; valign:middle;">
+                                        ${record.custbody_oro_3010_ref_no}
+                                    </td>
+                                </tr>
+                                <tr style="height:1cm;">
+                                    <td id="orange_label">
+                                        Einbezahlt von / Versé par/ Versato da
+                                    </td>
+                                </tr>
+                                <tr style="height:3.3cm;">
+                                    <td>
+                                        ${record.billaddress}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="height:2.7cm;">
+                        <td style="background-color:#ffffff" colspan="2">
+                            <p style="font-family:ocrb; font-size:12px; align:center; padding-top:20px;">
+                                ${record.custbody_oro_3010_besr_no}
+                            </p>
+                        </td>
+                    </tr>
+          	    </table>
+            <#else> <!-- ESR USING WHITE BACKGROUND -->
+                <table id="white_background" style="height:.5cm;">
+                    <tr>
+                        <td id="white_label" style="width:6cm; max-width:6cm; padding-left:5px;">
+                            Empfangsschein / Récépissé / Ricevuta
+                        </td>
+                        <td id="white_label" style="width:5.5cm; max-width:5.5cm; padding-left:5px;">
+                            Einzahlung Giro
+                        </td>
+                        <td id="white_label" style="width:6cm; max-width:6cm;">
+                            Versement Virement
+                        </td>
+                        <td id="white_label" style="width:3.5cm; max-width:3.5cm;">
+                            Versamento Girata
+                        </td>
+                    </tr>
+                </table>
+                <table id="white_background" style="height:10.5cm;" cellpadding="0">
+                    <tr>
+                        <td style="width:6cm; max-width:6cm;" rowspan="2">
+                            <table style="width:100%; max-width:100%; height:100%;">
+                                <tr style="width:100%; max-width:100%; height:.5cm;">
+                                    <td id="white_label" colspan="3">
+                                        Einzahlung für / Versement pour / Versamento per
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:1cm">
+                                    <td colspan="3">
+                                        ${record.custbody_oro_payment_account.custrecord_oro_3010_bank_address}
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:.5cm;">
+                                    <td id="white_label" colspan="3">
+                                        Zugunsten von / En vaveur de / A favore di
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:1.8cm">
+                                    <td colspan="3">
+                                        <#if record.subsidiary=="Parent Company" || record.subsidiary=="Mutterunternehmen"  || record.subsidiary=="Société mère">
+                                            ${companyInformation.addressText}
+                                        <#else>
+                                            ${subsidiary.mainaddress_text}
+                                        </#if>
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:.5cm;">
+                                    <td colspan="3" cellspacing="0" cellpadding="0">
+                                        <table style="width:100%; max-width:100%; border:none;" cellspacing="0" cellpadding="0">
+                                            <tr style="border:none;">
+                                                <td id="white_label" style="width:3cm; max-width:3cm; border:none;">
+                                                    Konto / Compte / Conto
+                                                </td>
+                                                <td style="width:3cm; max-width:3cm; font-family:ocrb; valign:middle; border:none;">
+                                                    ${record.custbody_oro_payment_account.custrecord_oro_3010_bank_no}
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:.5cm">
+                                    <td colspan="3">
+                                    
+                                    </td>
+                                </tr>
+                                <tr style="height:.5cm;">
+                                    <td id="white_border" style="width:4cm; max-width:4cm; height:100%; margin-left:5px; align:right; valign:middle;">
+                                        ${amount}
+                                    </td>
+                                    <td style="width:.5cm; max-width:.5cm; height:100%; valign:bottom; align:center;" cellspacing="0">
+                                        
+                                    </td>
+                                    <td id="white_border" style="width:1cm; max-width:1cm; height:100%; margin-right:5px; valign:middle;">
+                                        ${rappen}
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:.5cm;">
+                                    <td id="white_label" colspan="3">
+                                        Einbezahlt von / Versé par / Versato da
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:.5cm">
+                                    <td style="font-family:ocrb;" colspan="3">
+                                        ${record.custbody_oro_3010_esr_no}
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:1.5cm">
+                                    <td colspan="3">
+                                        ${record.billaddress}
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:2.7cm;">
+                                    <td style="valign:middle;" colspan="3" cellspacing="0" cellpadding="0">
+                                        <table style="width:100%; max-width:100%; height:100%; border:none;" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td style="width:50%; max-width:50%;">
+                                                </td>
+                                                <td id="white_label"style="width:50%; max-width:50%; font-size:6px; valign:middle;">
+                                                    Die Annahmestelle<br/>
+                                                    L'office de dépôt<br/>
+                                                    L'ufficio d'accettazione
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width:6.1cm; max-width:6.1cm;">
+                            <table style="width:100%; max-width:100%; height:100%;">
+                                <tr style="height:.5cm;">
+                                    <td id="white_label" colspan="3">
+                                        Einzahlung für / Versement pour / Versamento per
+                                    </td>
+                                </tr>
+                                <tr style="height:1cm">
+                                    <td colspan="3">
+                                        ${record.custbody_oro_payment_account.custrecord_oro_3010_bank_address}
+                                    </td>
+                                </tr>
+                                <tr style="height:.5cm;">
+                                    <td id="white_label" colspan="3">
+                                        Zugunsten von / En vaveur de / A favore di
+                                    </td>
+                                </tr>
+                                <tr style="height:1.8cm">
+                                    <td colspan="3">
+                                        <#if record.subsidiary=="Parent Company" || record.subsidiary=="Mutterunternehmen"  || record.subsidiary=="Société mère">
+                                            ${companyInformation.addressText}
+                                        <#else>
+                                            ${subsidiary.mainaddress_text}
+                                        </#if>
+                                    </td>
+                                </tr>
+                                <tr style="height:.5cm;">
+                                    <td colspan="3" cellspacing="0" cellpadding="0">
+                                        <table style="width:100%; max-width:100%; border:none;" cellspacing="0" cellpadding="0">
+                                            <tr style="border:none;">
+                                                <td id="white_label" style="width:3cm; max-width:3cm; border:none;">
+                                                    Konto / Compte / Conto
+                                                </td>
+                                                <td style="width:3cm; max-width:3cm; font-family:ocrb; valign:middle; border:none;">
+                                                    ${record.custbody_oro_payment_account.custrecord_oro_3010_bank_no}
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="height:.5cm">
+                                    <td colspan="3">
+                                        
+                                    </td>
+                                </tr>
+                                <tr style="height:.5cm;">
+                                    <td id="white_border" style="width:4cm; max-width:4cm; height:100%; margin-left:5px; align:right; valign:middle;">
+                                        ${amount}
+                                    </td>
+                                    <td style="width:.5cm; max-width:.5cm; height:100%; valign:bottom; align:center;" cellspacing="0">
+                                        
+                                    </td>
+                                    <td id="white_border" style="width:1cm; max-width:1cm; height:100%; margin-right:5px; valign:middle;">
+                                        ${rappen}
+                                    </td>
+                                </tr>
+                                <tr style="width:100%; max-width:100%; height:2.5cm;">
+                                    <td style="font-family:ocrb; padding-left:25px; padding-top:60px;" colspan="3">
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width:8.9cm; max-width:8.9cm; height:7.8cm;">
+                            <table style="width:100%; max-width:100%; height:2.5cm;">
+                                <tr>
+                                    <td id="white_label" style="width:5.6cm; max-width:5.6cm;">
+                                        Keine Mittelungen anbringen<br/>
+                                        pas de communications<br/>
+                                        Non aggiungete comunicazioni
+                                    </td>
+                                    <td style="width:3.3cm; max-width:3.3cm;">
+                                    </td>
+                                </tr>  
+                            </table>
+                            <table style="width:100%; max-width:100%; height:5.3cm;">
+                                <tr style="height:.5cm;">
+                                    <td id="white_label" style="align:center;">
+                                        Referenz-Nr./N⁰ de reférence/N⁰ di riferimento
+                                    </td>
+                                </tr>
+                                <tr style="height:.5cm;">
+                                    <td id="white_border" style="width:100%; max-width:100%; height:100%; margin-left:5px; margin-right: 5px; align:center; valign:middle;">
+                                        ${record.custbody_oro_3010_ref_no}
+                                    </td>
+                                </tr>
+                                <tr style="height:1cm;">
+                                    <td id="white_label">
+                                        Einbezahlt von / Versé par/ Versato da
+                                    </td>
+                                </tr>
+                                <tr style="height:3.3cm;">
+                                    <td>
+                                        ${record.billaddress}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="height:2.7cm;">
+                        <td style="background-color:#ffffff" colspan="2">
+                            <p style="font-family:ocrb; font-size:12px; align:center; padding-top:20px;">
+                                ${record.custbody_oro_3010_besr_no}
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </#if>
+      	</body>
+  	</pdf>
+</pdfset>

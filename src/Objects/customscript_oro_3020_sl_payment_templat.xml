@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_oro_3020_sl_payment_templat">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>_oro_3020_sl_payment_templates_installer</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 412967/_oro_3020_ebanking/scripts/server/_oro_3020_sl_payment_templates_installer.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_oro_3020_sl_eft_installer">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>Cloudmaven Payment Files Installer</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

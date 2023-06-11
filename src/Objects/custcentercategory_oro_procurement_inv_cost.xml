@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_procurement_inv_cost">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_inv]</centertab>
+  <label>Inventory Costing</label>
+  <links>
+    <link>
+      <linkid>ADMI_INVENTORYCOSTINGSETUP</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

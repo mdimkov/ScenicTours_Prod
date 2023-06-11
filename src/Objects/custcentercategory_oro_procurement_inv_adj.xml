@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_procurement_inv_adj">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_inv]</centertab>
+  <label>Inventory Adjustments</label>
+  <links>
+    <link>
+      <linkid>LIST_TRAN_INVADJST</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

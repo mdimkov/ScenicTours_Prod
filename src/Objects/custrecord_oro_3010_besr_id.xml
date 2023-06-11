@@ -1,0 +1,35 @@
+<othercustomfield scriptid="custrecord_oro_3010_besr_id">
+  <accesslevel>2</accesslevel>
+  <applyformatting>F</applyformatting>
+  <checkspelling>F</checkspelling>
+  <defaultchecked>F</defaultchecked>
+  <defaultselection></defaultselection>
+  <defaultvalue></defaultvalue>
+  <description></description>
+  <displayheight></displayheight>
+  <displaytype>NORMAL</displaytype>
+  <displaywidth></displaywidth>
+  <dynamicdefault></dynamicdefault>
+  <encryptatrest>F</encryptatrest>
+  <fieldtype>INTEGER</fieldtype>
+  <help>The BESR ID (bank number) is provided by your bank. In general, the ID is comprised of the last digits of your account; these then become the first digits of your reference number.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>BESR ID (Bank Number)</label>
+  <linktext></linktext>
+  <maxlength></maxlength>
+  <maxvalue>999999</maxvalue>
+  <minvalue>100000</minvalue>
+  <onparentdelete></onparentdelete>
+  <rectype>-112</rectype>
+  <searchcomparefield></searchcomparefield>
+  <searchdefault></searchdefault>
+  <searchlevel>2</searchlevel>
+  <selectrecordtype></selectrecordtype>
+  <showhierarchy>F</showhierarchy>
+  <showinlist>F</showinlist>
+  <sourcefilterby></sourcefilterby>
+  <sourcefrom></sourcefrom>
+  <sourcelist></sourcelist>
+  <storevalue>T</storevalue>
+</othercustomfield>

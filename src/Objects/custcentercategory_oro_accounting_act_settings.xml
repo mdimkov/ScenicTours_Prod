@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_accounting_act_settings">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_act]</centertab>
+  <label>Settings</label>
+  <links>
+    <link>
+      <linkid>EDIT_CALENDARPREFERENCE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

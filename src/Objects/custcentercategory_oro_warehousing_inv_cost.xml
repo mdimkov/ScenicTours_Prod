@@ -1,0 +1,32 @@
+<centercategory scriptid="custcentercategory_oro_warehousing_inv_cost">
+  <center>[scriptid=custcenter_oro_warehousing]</center>
+  <centertab>[scriptid=custcentertab_oro_warehousing_inv]</centertab>
+  <label>Lagerbuchhaltung</label>
+  <links>
+    <link>
+      <linkid>REPO_230</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_229</linkid>
+      <linklabel>Bestandserlös (inkl. Anteil am Umsatz)</linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>REPO_64</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>LIST_INVCOSTTEMPLATE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>ADMI_INVENTORYCOSTINGSETUP</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

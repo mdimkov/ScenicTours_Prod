@@ -1,0 +1,5 @@
+<centercategory scriptid="custcentercategory_oro_sales_aftersales_repair">
+  <center>[scriptid=custcenter_oro_sales]</center>
+  <centertab>[scriptid=custcentertab_oro_sales_aftersales]</centertab>
+  <label>Repairs</label>
+</centercategory>

@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_accounting_gl_all">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_gl]</centertab>
+  <label>Cost Allocations &amp; Reallocations</label>
+  <links>
+    <link>
+      <linkid>LIST_EXPCATEGORY</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

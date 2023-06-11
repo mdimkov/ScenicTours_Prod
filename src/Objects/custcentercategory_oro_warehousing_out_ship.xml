@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_warehousing_out_ship">
+  <center>[scriptid=custcenter_oro_warehousing]</center>
+  <centertab>[scriptid=custcentertab_oro_warehousing_out]</centertab>
+  <label>Sending &amp; Shipping</label>
+  <links>
+    <link>
+      <linkid>TRAN_SALESORDFULFILL</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

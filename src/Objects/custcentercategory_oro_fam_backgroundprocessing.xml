@@ -1,0 +1,19 @@
+<centercategory scriptid="custcentercategory_oro_fam_backgroundprocessing">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_fam_fixedassets]</centertab>
+  <label>Background Processing</label>
+  <links>
+    <link>
+      <linklabel>FAM Process List</linklabel>
+      <linkobject>[scriptid=customrecord_fam_process]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Status</linklabel>
+      <linkobject>[scriptid=customscript_fam_fprsummary_su]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

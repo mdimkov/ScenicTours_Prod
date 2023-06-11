@@ -1,0 +1,17 @@
+<centercategory scriptid="custcentercategory_oro_accounting_inv_cost">
+  <center>[scriptid=custcenter_oro_accounting]</center>
+  <centertab>[scriptid=custcentertab_oro_accounting_inv]</centertab>
+  <label>Inventory Costing</label>
+  <links>
+    <link>
+      <linkid>LIST_INVCOSTTEMPLATE</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linkid>ADMI_INVENTORYCOSTINGSETUP</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory_oro_procurement_inv_trf">
+  <center>[scriptid=custcenter_oro_procurement]</center>
+  <centertab>[scriptid=custcentertab_oro_procurement_inv]</centertab>
+  <label>Inventory Transfers</label>
+  <links>
+    <link>
+      <linkid>LIST_TRAN_INVTRNFR</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>
